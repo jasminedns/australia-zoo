@@ -1,0 +1,16 @@
+:root {
+    --small-font: 19px
+    --base-font: 22px
+    --large-font: 64px
+    --textcolor-main: #211000;
+    --textcolor-secondary: #F5F0D7;
+    --title-main: #3C5724;
+    --title-secondary: #89AA4F;
+    --title-tertiary: #F5F0D7;
+    --button-main: #F07300;
+    --button-secondary: #89AA4F;
+    --button-secondary-hover: #657D3B;
+    --button-tertiary: #E2DDC8;
+    --button-tertiary-hover: #FFFAE2;
+    --border-radius: 10px
+}
