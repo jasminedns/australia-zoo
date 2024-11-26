@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Love Ya Like A Sister';
+    src: url('LoveYaLikeASister-Regular.woff2') format('woff2'),
+        url('LoveYaLikeASister-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

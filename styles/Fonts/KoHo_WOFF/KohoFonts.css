@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-Bold.woff2') format('woff2'),
+        url('KoHo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-Italic.woff2') format('woff2'),
+        url('KoHo-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-Medium.woff2') format('woff2'),
+        url('KoHo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-MediumItalic.woff2') format('woff2'),
+        url('KoHo-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-BoldItalic.woff2') format('woff2'),
+        url('KoHo-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-LightItalic.woff2') format('woff2'),
+        url('KoHo-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-Regular.woff2') format('woff2'),
+        url('KoHo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-SemiBold.woff2') format('woff2'),
+        url('KoHo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-ExtraLight.woff2') format('woff2'),
+        url('KoHo-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-ExtraLightItalic.woff2') format('woff2'),
+        url('KoHo-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-SemiBoldItalic.woff2') format('woff2'),
+        url('KoHo-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-Light.woff2') format('woff2'),
+        url('KoHo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
