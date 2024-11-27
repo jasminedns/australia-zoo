@@ -1,9 +1,9 @@
 body {
-    font-family: 'Zilla Slab';
-    src: url('ZillaSlab-BoldItalic.woff2') format('woff2'),
-        url('ZillaSlab-BoldItalic.woff') format('woff');
+    font-family: 'KoHo';
+    src: url('KoHo-Bold.woff2') format('woff2'),
+        url('KoHo-Bold.woff') format('woff');
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     font-display: swap;
 }
 
