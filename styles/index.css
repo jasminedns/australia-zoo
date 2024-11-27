@@ -8,7 +8,7 @@ body {
 }
 
 .sidebar {
-    background-color: beige;
+    background-color: var(--textcolor-secondary);
     width : 189px;
     height: 38px;
     padding: 20px;
@@ -25,5 +25,5 @@ body {
     padding: 8px;
     font-size: 22px;
     cursor: pointer; 
-    color: #211000;
+    color: var(--textcolor-main);
 }
