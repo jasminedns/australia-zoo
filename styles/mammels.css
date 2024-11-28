@@ -1,0 +1,28 @@
+.ourMammals {
+    background-image: url(../images/textures/texture2-backgorund.jpg);
+}
+
+.clickedAnimal {
+    background-image: url(../images/textures/texture-background.jpg);
+}
+
+.ourMammals, .clickedAnimal {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+}
+
+span {
+    font-family: 'Love Ya Like A Sister';
+    font-size: 3rem;
+    margin: 0;
+}
+
+.firstWord {
+    color: var(--title-secondary);
+}
+
+.secondWord {
+    color: var(--title-tertiary);
+}
