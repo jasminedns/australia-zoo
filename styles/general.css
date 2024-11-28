@@ -42,35 +42,35 @@ header {
     font-family: 'ZillaSlab';
 }
 
-
 body {
     margin: 0;
     font-family: 'KoHo';
-    --title-tertiary: #F5F0D7;
+    color: var(--textcolor-main); /* Using main text color */
+    background-color: var(--textcolor-secondary); /* Background set to secondary text color */
 }
 
 /* Hamburger Menu Icon */
 .hamburger-menu {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: var(--border-radius);
+    right: var(--border-radius);
     cursor: pointer;
     z-index: 1000;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: var(--border-radius);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 6px var(--shadow-light); /* Using light shadow */
 }
 
 .hamburger-menu .line {
     width: 30px;
     height: 4px;
-    background-color: #3C5724; /* Default green */
-    margin: 6px 0;
-    transition: background-color 0.3s ease;
+    background-color: var(--title-main); /* Default green */
+    margin: calc(var(--border-radius) / 2) 0; /* Using calculated spacing */
+    transition: background-color var(--transition-speed) ease;
 }
 
 .hamburger-menu:hover .line {
-    background-color: #F07300; /* Orange on hover */
+    background-color: var(--button-main); /* Orange on hover */
 }
 
 /* Side Menu (Full Screen) */
@@ -78,12 +78,12 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%; /* Full screen width */
-    height: 100%; /* Full screen height */
-    background-color: #F5F0D7; /* Beige background */
-    transition: 0.3s ease-in-out;
-    padding-top: 50px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    background-color: var(--title-tertiary); /* Beige background */
+    transition: opacity var(--transition-speed) ease-in-out, visibility var(--transition-speed);
+    padding-top: calc(var(--border-radius) * 5);
+    box-shadow: -2px 0 5px var(--shadow-heavy);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,20 +104,20 @@ body {
 }
 
 .side-menu ul li {
-    padding: 20px;
+    padding: calc(var(--border-radius) * 2); /* Dynamic padding */
 }
 
 .side-menu ul li a {
     text-decoration: none;
-    color: #3C5724;
-    font-size: 30px;
-    letter-spacing: 2px; /* Slightly spaced letters */
+    color: var(--title-main); /* Default green */
+    font-size: var(--base-font); /* Base font size */
+    letter-spacing: 2px;
     display: block;
-    transition: color 0.3s, letter-spacing 0.3s;
+    transition: color var(--transition-speed), letter-spacing var(--transition-speed);
 }
 
 .side-menu ul li a:hover {
-    color: #89AA4F; /* Light green on hover */
+    color: var(--title-secondary); /* Light green on hover */
     letter-spacing: 5px; /* Increase letter-spacing on hover */
 }
 
@@ -133,4 +133,6 @@ body {
 .hamburger-menu.open .line:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+
 
