@@ -35,3 +35,16 @@ body {
     color: #211000;
     color: var(--textcolor-main);
 }
+
+header {
+    position: absolute;
+}
+
+.bgImageWrapper {
+    background-image: url(../images/background/quokka-background.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 50%;
+    width: 100%;
+}
