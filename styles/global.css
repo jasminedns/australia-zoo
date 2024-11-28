@@ -1,0 +1,78 @@
+span {
+    font-family: 'Love Ya Like A Sister';
+    font-size: var(--large-font);
+    margin: 0;
+}
+
+.section1, .section2 {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    padding: 32px;
+}
+
+.section1 {
+    background-image: url(../images/textures/texture2-backgorund.jpg);
+}
+
+.section2 {
+    background-image: url(../images/textures/texture-background.jpg);
+}
+
+.section1__text, .section2__text {
+    margin: 24px 0;
+    padding: 24px;
+}
+
+.section1__text--changeContent, .section2__text--changeContent {
+    font-family: 'KoHo';
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 16px;
+    text-transform: uppercase;
+}
+
+.section1__text--changeContent {
+    color: var(--textcolor-secondary);
+}
+
+.section2__text--changeContent {
+    color: var(--textcolor-main);
+    text-align: right;
+}
+
+.section1__title, .section2__title {
+    margin: 24px 24px 24px 0;
+    padding: 24px;
+}
+
+.section1__title {
+    text-align: right;
+}
+
+.section1__title--changeContent1, .section1__title--changeContent2, .section2__title--changeContent1, .section2__title--changeContent2 {
+    margin: 0 16px 16px 16px;
+}
+
+.section1__title--changeContent1 {
+    color: var(--title-secondary);
+}
+
+.section1__title--changeContent2 {
+    color: var(--title-tertiary);
+}
+
+.section2__title--changeContent1 {
+    color: var(--title-main);
+}
+
+.section2__title--changeContent2 {
+    color: var(--title-secondary);
+}
+
+.section2__img--changeContent {
+    width: 250px;
+}
