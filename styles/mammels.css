@@ -1,9 +1,7 @@
-.ourMammals {
-    background-image: url(../images/textures/texture2-backgorund.jpg);
-}
-
-.clickedAnimal {
-    background-image: url(../images/textures/texture-background.jpg);
+span {
+    font-family: 'Love Ya Like A Sister';
+    font-size: 4rem; /*change it back to --large-font*/
+    margin: 0;
 }
 
 .ourMammals, .clickedAnimal {
@@ -13,16 +11,75 @@
     width: 100%;
 }
 
-span {
-    font-family: 'Love Ya Like A Sister';
-    font-size: 3rem;
-    margin: 0;
+.ourMammals {
+    background-image: url(../images/textures/texture2-backgorund.jpg);
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    padding: 32px;
 }
 
-.firstWord {
+.clickedAnimal {
+    align-items: center;
+    background-image: url(../images/textures/texture-background.jpg);
+    display: flex;
+    padding: 16px;
+}
+
+.ourMammals__textWrapper-text {
+    color: var(--textcolor-secondary);
+    display: inline-block;
+    flex: 1;
+    font-family: 'KoHo';
+    font-size: 1rem;
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 16px;
+    text-transform: uppercase;
+    padding: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* good, works */
+.ourMammals__titleWrapper {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: right;
+}
+
+.ourMammals__titleWrapper, .clickedAnimal__wrapper {
+    margin: 24px;
+}
+
+.ourMammals__titleWrapper-firstWord {
     color: var(--title-secondary);
 }
 
-.secondWord {
+.ourMammals__titleWrapper-secondWord {
     color: var(--title-tertiary);
+}
+
+.ourMammals__titleWrapper-firstWord, .ourMammals__titleWrapper-secondWord, .clickedAnimal__wrapper-firstWord, .clickedAnimal__wrapper-secondWord {
+    margin: 0 16px 16px 16px;
+}
+
+.clickedAnimal__wrapper-firstWord {
+    color: var(--title-main);
+}
+
+.clickedAnimal__wrapper-secondWord {
+    color: var(--title-secondary);
 }
