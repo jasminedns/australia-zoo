@@ -1,27 +1,45 @@
 body {
+    background-color: var(--title-tertiary);
     display: flex;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-.sidebar {
-    width: 20%;
-    background-color: var(--title-tertiary);
-    padding: 15px;
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-BoldItalic.woff2') format('woff2'),
+        url('KoHo-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-Regular.woff2') format('woff2'),
+        url('KoHo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .main {
     width: 80%;
     padding: 15px;
     display: flex;
     justify-content: flex-end;
 }
-.welcome-message {
-    text-align: right;
-    color: var(--title-secondary)
-}
+
 .welcome-message h1 {
-    color: var(--title-main)
-}
-.welcome-message p {
     color: var(--title-main);
+    font-size: var(--large-font);
+    line-height: 83.2px;
+   
+}
+
+.welcome-message p {
+    color: var(--textcolor-main);
+    text-align: center;
+    font-size: var(--base-font);
+    line-height: 28.6px;
 }
