@@ -22,3 +22,6 @@ body {
 .welcome-message h1 {
     color: var(--title-main)
 }
+.welcome-message p {
+    color: var(--title-main);
+}
