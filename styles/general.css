@@ -6,6 +6,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'KoHo';
+    src: url('Fonts/KoHo_WOFF/KoHo-Bold.woff') format('woff2'),
+         url('Fonts/KoHo_WOFF/KoHo-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHoregular';
+    src: url('Fonts/KoHo_WOFF/KoHo-Regular.woff') format('woff2'),
+        url('Fonts/KoHo_WOFF/KoHo-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -44,7 +62,7 @@ header {
 
 footer {
     background-image: url("../images/textures/texture2-backgorund.jpg");
-    color: #fff;
+    color: var(--textcolor-secondary);
     padding: 20px 0;
     text-align: center;
 }
@@ -65,13 +83,15 @@ footer {
 
 .footer-section a { 
     margin: 0 10px;
-    color: #ffffff;
+    color: var(--textcolor-secondary);
     text-decoration: none;
 }
 
 .footer-section.partners {
     display: flex;
     flex-direction: column;
+    font-family: 'KoHoregular';
+    font-size: var(--small-font);
     justify-content: space-between;
     text-align: center;
     align-items: center;
@@ -80,7 +100,7 @@ footer {
 }
 
 .footer-section.partners a:hover {
-    color: #F07300;
+    color: var(--button-main);
 }
 
 .footer-section img {
@@ -93,6 +113,8 @@ footer {
 }
 
 .footer-bottom p {
+    font-family: 'KoHoregular';
+    font-size: var(--small-font);
     margin: 0;
 }
 
@@ -114,28 +136,32 @@ footer {
     border: #fff;
     border-bottom: 2px solid rgb(255, 255, 255);
     background-color: transparent;
-    color: #fff;
-    
+    color: var(--textcolor-secondary);
+
     &:focus {
      outline: none;
+     outline-style: none;
     }
 }
 
-
 .newsletter button {
-    padding: 10px 20px;
-    background-color: #89AA4F;
+    padding: 10px 10px;
+    background-color: var(--title-secondary);
+    width: 160px;
+    font-family: 'KoHoregular';
     border: none;
     border-radius: 5px;
     margin-top: 10px;
-    color: #fff;
-    font-size: 1em;
+    color: var(--button-tertiary);
+    font-size: var(--small-font);
     cursor: pointer;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .newsletter button:hover {
-    background-color: #657D3B;
+    background-color: var(--button-secondary-hover);
+    color: var(--button-tertiary-hover);
+    font-family: 'KoHo';
 }
 
 .socialmedia {
@@ -144,7 +170,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 160px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid var(--button-tertiary);
 }
 
 .social-icons {
@@ -153,4 +179,6 @@ footer {
 
 .subscribe {
     height: 160px;
+    font-family: 'KoHoregular';
+    font-size: var(--small-font);
 }
