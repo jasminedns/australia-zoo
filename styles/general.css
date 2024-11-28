@@ -41,3 +41,96 @@ header {
 .titleWrapper h1, .titleWrapper h2 {
     font-family: 'ZillaSlab';
 }
+
+
+body {
+    margin: 0;
+    font-family: 'KoHo';
+    --title-tertiary: #F5F0D7;
+}
+
+/* Hamburger Menu Icon */
+.hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.hamburger-menu .line {
+    width: 30px;
+    height: 4px;
+    background-color: #3C5724; /* Default green */
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger-menu:hover .line {
+    background-color: #F07300; /* Orange on hover */
+}
+
+/* Side Menu (Full Screen) */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; /* Full screen width */
+    height: 100%; /* Full screen height */
+    background-color: #F5F0D7; /* Beige background */
+    transition: 0.3s ease-in-out;
+    padding-top: 50px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Hide by default */
+}
+
+.side-menu.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.side-menu ul li {
+    padding: 20px;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #3C5724;
+    font-size: 30px;
+    letter-spacing: 2px; /* Slightly spaced letters */
+    display: block;
+    transition: color 0.3s, letter-spacing 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: #89AA4F; /* Light green on hover */
+    letter-spacing: 5px; /* Increase letter-spacing on hover */
+}
+
+/* Menu Open/Close Animations */
+.hamburger-menu.open .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.open .line:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.hamburger-menu.open .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
