@@ -8,8 +8,6 @@ body {
 .sidebar {
     background-color: beige;
     font-family: 'KoHo';
-    src: url('KoHo-Bold.woff2') format('woff2'),
-        url('KoHo-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
