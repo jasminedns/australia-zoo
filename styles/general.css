@@ -114,11 +114,10 @@ footer {
     border: #fff;
     border-bottom: 2px solid rgb(255, 255, 255);
     background-color: transparent;
-    color: red;
+    color: #fff;
     
     &:focus {
-        outline-color: #a800f0;
-        
+     outline: none;
     }
 }
 
