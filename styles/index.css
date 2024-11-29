@@ -4,7 +4,7 @@ header {
 
 .sidebar {
     background-color: var(--textcolor-secondary);
-    width : 190px;
+    width: 190px;
     height: 38px;
     padding: 20px;
     background-color: beige;
@@ -23,16 +23,15 @@ header {
     text-align: center;
     padding: 8px;
     font-size: 22px;
-    cursor: pointer; 
-    color: var(--textcolor-main); 
+    cursor: pointer;
+    color: var(--textcolor-main);
 }
 
 .bgImageWrapper {
     background-image: url(../images/background/quokka-background.jpg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 50%;
     width: 100%;
 }
-
