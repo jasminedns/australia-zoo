@@ -12,5 +12,11 @@
     --button-secondary-hover: #657D3B;
     --button-tertiary: #E2DDC8;
     --button-tertiary-hover: #FFFAE2;
-    --border-radius: 10px
+    --border-radius: 10px;
+    --small-margin: 8px;
+    --base-margin: 16px;
+    --large-margin: 24px;
+    --small-padding: 8px;
+    --base-padding: 16px;
+    --large-padding: 24px;
 }
