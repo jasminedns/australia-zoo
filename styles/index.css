@@ -1,8 +1,10 @@
-
 body {
+    font-family: 'KoHo';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 26.4px;
     text-align: center;
 }
 
@@ -10,8 +12,6 @@ body {
     background-color: beige;
     font-family: 'KoHo';
     font-weight: bold;
-    font-style: normal;
-    font-display: swap;
 }
 
 .sidebar {
@@ -48,4 +48,27 @@ header {
     background-size: cover; 
     height: 50%;
     width: 100%;
+}
+
+.main {
+    flex: 1;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.welcome-message h1 {
+    color: var(--title-main);
+    font-size: var(--large-font);
+    line-height: 83.2px;
+    text-align: center;
+   
+}
+
+.welcome-message p {
+    color: var(--textcolor-main);
+    text-align: center;
+    font-size: var(--base-font);
+    line-height: 28.6px;
 }
