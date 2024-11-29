@@ -15,7 +15,6 @@ body {
 }
 
 .sidebar {
-    background-color: var(--textcolor-secondary);
     width : 189px;
     height: 100%;
     padding: 20px;
@@ -45,7 +44,7 @@ header {
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    height: 50%;
+    min-height: 50%;
     width: 100%;
 }
 
@@ -53,6 +52,7 @@ header {
     flex: 1;
     width: 100%;
     display: flex;
+    justify-content: center;
     background-image: url(../images/textures/texture-background.jpg);
     background-size: cover; 
 }
