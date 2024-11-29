@@ -114,7 +114,7 @@ ul li {
     display: inline-block;
     font-weight: 600;
     margin: var(--small-margin) var(--base-margin);
-    padding: var(small-padding);
+    padding: var(--small-padding);
 }
 
 .section1__empty {
