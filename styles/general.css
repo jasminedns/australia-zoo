@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'ZillaSlab';
+    src: url('Fonts/Zilla_Slab_WOFF/ZillaSlab-Bold.woff') format('woff'),
+         url('Fonts/Zilla_Slab_WOFF/ZillaSlab-Bold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoHo';
+    src: url('Fonts/KoHo_WOFF/KoHo-Bold.woff') format('woff2'),
+         url('Fonts/KoHo_WOFF/KoHo-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoHoregular';
+    src: url('Fonts/KoHo_WOFF/KoHo-Regular.woff') format('woff2'),
+        url('Fonts/KoHo_WOFF/KoHo-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+}
+
+.imgWrapper {
+    margin: 24px 0 24px 24px;
+    height: 70px;
+    width: 70px;
+}
+
+.titleWrapper h1 {
+    font-size: 1.2rem;
+    margin: 24px 5px 0 0;
+}
+
+.titleWrapper h2 {
+    margin: 0 5px 0 16px;
+}
+
+.titleWrapper h1, .titleWrapper h2 {
+    font-family: 'ZillaSlab';
+}
+
+footer {
+    background-image: url("../images/textures/texture2-backgorund.jpg");
+    color: var(--textcolor-secondary);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    align-items: start;
+    padding: 0 20px;
+    position: relative;
+}
+
+.footer-section a { 
+    margin: 0 10px;
+    color: var(--textcolor-secondary);
+    text-decoration: none;
+}
+
+.footer-section.partners {
+    display: flex;
+    flex-direction: column;
+    font-family: 'KoHoregular';
+    font-size: var(--small-font);
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 160px;
+    border-left: 1px solid var(--border-color);
+}
+
+.footer-section.partners a:hover {
+    color: var(--button-main);
+}
+
+.footer-section img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    text-align: left;
+}
+
+.footer-bottom p {
+    font-family: 'KoHoregular';
+    font-size: var(--small-font);
+    margin: 0;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.newsletter label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.email-input {
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border: var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    background-color: transparent;
+    color: var(--textcolor-secondary);
+
+    &:focus {
+     outline: none;
+     outline-style: none;
+    }
+}
+
+.newsletter button {
+    padding: 10px 10px;
+    background-color: var(--title-secondary);
+    width: 160px;
+    font-family: 'KoHoregular';
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: var(--button-tertiary);
+    font-size: var(--small-font);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.newsletter button:hover {
+    background-color: var(--button-secondary-hover);
+    color: var(--button-tertiary-hover);
+    font-family: 'KoHo';
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    border-right: 1px solid var(--button-tertiary);
+}
+
+.social-icons {
+    display: flex;
+}
+
+.subscribe {
+    height: 160px;
+    font-family: 'KoHoregular';
+    font-size: var(--small-font);
+}
