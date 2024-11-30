@@ -53,8 +53,14 @@
     margin: 1rem 1rem;
     font-family: "KoHo";
     font-weight: bold;
-}
 
+    &:hover {
+        background-color: var(--button-main);
+    }
+}
+.team-content__button--active {
+    background-color: var(--button-main);
+}
 .team-content__area {
     display: flex;
     max-width: 80rem;
