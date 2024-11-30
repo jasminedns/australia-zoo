@@ -63,13 +63,13 @@ body {
 .hamburger-menu .line {
     width: 30px;
     height: 4px;
-    background-color: #3C5724; /* Default green */
+    color: var(--title-main);
     margin: 6px 0;
     transition: background-color 0.3s ease;
 }
 
 .hamburger-menu:hover .line {
-    background-color: #F07300; /* Orange on hover */
+    color: var(--button-main);
 }
 
 /* Side Menu (Full Screen) */
@@ -108,7 +108,7 @@ body {
 
 .side-menu ul li a {
     text-decoration: none;
-    color: #3C5724;
+    color: var(--title-main);
     font-size: 30px;
     letter-spacing: 2px; /* Slightly spaced letters */
     display: block;
@@ -116,7 +116,7 @@ body {
 }
 
 .side-menu ul li a:hover {
-    color: #89AA4F; /* Light green on hover */
+    color: var( --button-secondary);
     letter-spacing: 5px; /* Increase letter-spacing on hover */
 }
 
