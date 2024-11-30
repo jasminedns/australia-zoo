@@ -52,13 +52,13 @@ header {
     flex: 1;
     width: 100%;
     display: flex;
-    justify-content: center;
     background-image: url(../images/textures/texture-background.jpg);
     background-size: cover; 
 }
 
 .welcome-message {
     align-self: center;
+    flex: 1;
 }
 
 .welcome-message h1 {
