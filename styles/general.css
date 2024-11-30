@@ -196,3 +196,7 @@ footer {
 .medium-horizontal-padding {
  padding: 0 3rem;
 }
+
+.hidden {
+    display: none;
+}

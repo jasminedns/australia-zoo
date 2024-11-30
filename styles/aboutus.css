@@ -4,7 +4,7 @@
 
 .header__picture {
     background-image: url(../images/background/reptiles-background.jpg);
-    background-position: right -15rem;
+    background-position: right -10rem;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60%;
@@ -53,6 +53,7 @@
     margin: 1rem 1rem;
     font-family: "KoHo";
     font-weight: bold;
+    user-select: none;
 
     &:hover {
         background-color: var(--button-main);
@@ -80,9 +81,9 @@
 
 .team-content__member-picture {
     height: 100%;
-    width: 100%;
+    width: auto;
     padding: 5rem;
-    flex:1;
+   
 }
 
 .team-content__member-info {
@@ -112,4 +113,8 @@
 
 .team-content__member-fname {
     color: var(--title-secondary);
+}
+
+.team-content__picture-area {
+    flex: 0 0 40%;
 }
