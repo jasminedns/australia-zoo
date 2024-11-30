@@ -10,15 +10,14 @@ body {
 }
 
 .sidebar {
-    font-family: 'KoHo';
-    font-weight: bold;
-}
-
-.sidebar {
     width : 189px;
     height: 100%;
     padding: 20px;
-   
+    background-color: beige;
+    font-family: 'KoHo';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 .sidebar ul {
@@ -31,7 +30,7 @@ body {
     text-align: center;
     padding: 8px;
     font-size: 22px;
-    cursor: pointer; 
+    cursor: pointer;
     color: var(--textcolor-main);
 }
 
