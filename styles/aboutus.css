@@ -3,8 +3,8 @@
 }
 
 .header__picture {
-    background-image: url(../images/background/aboutus.jpg);
-    background-position: center;
+    background-image: url(../images/background/reptiles-background.jpg);
+    background-position: right -15rem;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60%;
@@ -33,7 +33,7 @@
 
 .team-content__our-team {
     font-size: var(--large-font);
-    color: var(--textcolor-main);
+    color: var(--title-main);
     font-family: "Koho", sans-serif;
 }
 
@@ -56,10 +56,12 @@
 
     &:hover {
         background-color: var(--button-main);
+        border-radius: var(--border-radius);
     }
 }
 .team-content__button--active {
     background-color: var(--button-main);
+    border-radius: var(--border-radius);
 }
 .team-content__area {
     display: flex;
