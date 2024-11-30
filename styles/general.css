@@ -182,3 +182,17 @@ footer {
     font-family: 'KoHoregular';
     font-size: var(--small-font);
 }
+
+.flex-horizontal-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.medium-horizontal-padding {
+ padding: 0 3rem;
+}
