@@ -58,18 +58,19 @@ body {
     padding: 10px;
     border-radius: var(--border-radius);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: var(--title-tertiary);
 }
 
 .hamburger-menu .line {
     width: 30px;
     height: 4px;
-    color: var(--title-main);
+    background-color: var(--title-main);
     margin: 6px 0;
     transition: background-color 0.3s ease;
 }
 
 .hamburger-menu:hover .line {
-    color: var(--button-main);
+    background-color: var(--button-main);
 }
 
 /* Side Menu (Full Screen) */
@@ -79,7 +80,7 @@ body {
     right: 0;
     width: 100%; /* Full screen width */
     height: 100%; /* Full screen height */
-    color: var(--textcolor-secondary);
+    color: var(--textcolor-main);
     transition: 0.3s ease-in-out;
     padding-top: 50px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
@@ -88,6 +89,7 @@ body {
     align-items: center;
     opacity: 0; /* Initially hidden */
     visibility: hidden; /* Hide by default */
+    background-color: var(--title-tertiary);
 }
 
 .side-menu.open {
