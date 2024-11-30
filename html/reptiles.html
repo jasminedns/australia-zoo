@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reptiles</title>
+    <link rel="stylesheet" href="/styles/reptiles.css"> 
+    <link rel="stylesheet" href="styles/variables.css">
+    <script src="/scripts/reptiles.js" defer></script> 
 </head>
 <body>
-    
+    <header class="page-header">
+        <h1>About Our Reptiles</h1>
+        <p>Discover fascinating facts about these amazing reptiles!</p>
+    </header>
+
+    <main class="reptile-container">
+        <div class="buttons">
+            <button id="frillButton" class="btn-main">Frill-Necked Lizard</button>
+            <button id="hawksbillButton" class="btn-main">Hawksbill Turtle</button>
+            <button id="perentieButton" class="btn-main">Perentie</button>
+        </div>
+
+        <div id="animal-info" class="animal-info">
+            <h2 id="animal-name"></h2>
+            <img id="animal-image" alt="Animal Image" style="display: none;"> 
+            <p id="animal-description"></p>
+        </div>
+    </main>
 </body>
 </html>

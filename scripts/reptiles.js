@@ -9,7 +9,6 @@ const frillNeckedLizard = {
     description: "When this unique creature feels threatened, it rises on its hind legs, opens its yellow-coloured mouth, unfurls the colorful, pleated skin flap that encircles it's head, and hisses. If an attacker is unintimidated by these antics, the lizard simply turns tail, mouth and frill open, and bolts, legs splaying left and right. It continues its deliberate run wwthout stopping or looking back until reaches the safety of a tree.",
     shortDescription: "The frill-necked lizard is a reptile from northern Australia and New Guinea, known for its large, dramatic neck frill used to scare predators."
 };
-
 const hawksbillTurtle = {
     lifespan: "50 years",
     group: "Reptiles",
@@ -33,3 +32,29 @@ const perentie = {
     description: "The perentie (Varanus giganteus) is the largest monitor lizard or goanna native to Australia. It is one of the largest living lizards on earth, after the Komodo dragon, Asian water monitor, crocodile monitor, and intersecting by size with Nile monitor.[3] Found west of the Great Dividing Range in the arid areas of Australia, it is rarely seen, because of its shyness and the remoteness of much of its range from human habitation. The species is considered to be a least-concern species according to the International Union for Conservation of Nature. Its status in many Aboriginal cultures is evident in the totemic relationships, and part of the Ngiṉṯaka dreaming, as well as bush tucker. It was a favoured food item among desert Aboriginal tribes, and the fat was used for medicinal and ceremonial purposes.",
     shortDescription: "The perentie is Australia's largest monitor lizard, found in arid and desert regions. Known for its speed and sharp claws, it is a skilled hunter."
     };
+    
+    // DOM elements
+    const animalName = document.getElementById("animal-name");
+    const animalImage = document.getElementById("animal-image");
+    const animalDescription = document.getElementById("animal-description");
+    
+    // Button click event handlers
+    document.getElementById("frillButton").addEventListener("click", () => {
+        displayAnimal(frillNeckedLizard);
+    });
+    
+    document.getElementById("hawksbillButton").addEventListener("click", () => {
+        displayAnimal(hawksbillTurtle);
+    });
+    
+    document.getElementById("perentieButton").addEventListener("click", () => {
+        displayAnimal(perentie);
+    });
+    
+    function displayAnimal(animal) {
+        animalName.textContent = animal.name;
+        animalImage.src = animal.image;
+        animalImage.style.display = "block";
+        animalDescription.textContent = animal.description;
+    }
+    

@@ -1,0 +1,118 @@
+:root {
+    --base-font: 22px;
+    --large-font: 64px;
+    --textcolor-main: #211000;
+    --textcolor-secondary: #F5F0D7;
+    --title-main: #3C5724;
+    --title-secondary: #89AA4F;
+    --title-tertiary: #F5F0D7;
+    --button-main: #F07300;
+    --button-secondary: #89AA4F;
+    --button-secondary-hover: #657D3B;
+    --button-tertiary: #E2DDC8;
+    --button-tertiary-hover: #FFFAE2;
+    --border-radius: 10px;
+    --border-color: #fff;
+}
+
+body {
+    font-family:
+    margin: 0;
+    padding: 0;
+    background-color: #F5F0D7;
+    color: var(--textcolor-main);
+    text-align: center;
+}
+
+.page-header {
+    background-color: var(--title-main);
+    color: var(--title-tertiary);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.page-header h1 {
+    font-size: var(--large-font);
+    margin: 0;
+}
+
+.page-header p {
+    font-size: var(--base-font);
+    margin: 10px 0 0;
+}
+
+.reptile-container {
+    margin: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.btn-main {
+    background-color: var(--button-main);
+    color: var(--textcolor-secondary);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--base-font);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: var(--button-secondary);
+}
+
+.btn-secondary {
+    background-color: var(--button-secondary);
+    color: var(--textcolor-secondary);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--base-font);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--button-secondary-hover);
+}
+
+.animal-info {
+    background-color: var(--button-tertiary);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.animal-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin: 10px 0;
+}
+
+.animal-info h2 {
+    color: var(--title-main);
+    font-size: var(--large-font);
+    margin: 10px 0;
+}
+
+.animal-info p {
+    color: var(--textcolor-main);
+    font-size: var(--base-font);
+    line-height: 1.6;
+}
+
+.page-footer {
+    background-color: var(--title-secondary);
+    color: var(--textcolor-secondary);
+    padding: 20px;
+    margin-top: 20px;
+}
