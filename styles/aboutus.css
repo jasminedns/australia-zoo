@@ -95,6 +95,7 @@
     padding-right: 3rem;
     margin: 0;
     text-align: right;
+    text-transform: uppercase;
 }
 
 .team-content__member-lname {
