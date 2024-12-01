@@ -12,13 +12,12 @@ body {
 .sidebar {
     font-family: 'KoHo';
     font-weight: bold;
-}
-
-.sidebar {
     width : 189px;
     height: 100%;
-    padding: 20px;
-   
+}
+
+header {
+    position: absolute;
 }
 
 .sidebar ul {
@@ -33,10 +32,6 @@ body {
     font-size: 22px;
     cursor: pointer; 
     color: var(--textcolor-main);
-}
-
-header {
-    position: absolute;
 }
 
 .bgImageWrapper {
@@ -74,3 +69,4 @@ header {
     font-size: var(--base-font);
     line-height: 28.6px;
 }
+

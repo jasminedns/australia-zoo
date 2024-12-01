@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../scripts/aboutus.js" defer></script>
-    <title>Document</title>
+    <title>Our Team</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/aboutus.css">
+    <link rel="stylesheet" href="../styles/Fonts/KoHo_WOFF/KohoFonts.css">
+    <link rel="stylesheet" href="../styles/Fonts/LYLAS_WOFF/LYLASFonts.css">
+    <link rel="stylesheet" href="../styles/Fonts/Zilla_Slab_WOFF/ZillaSlabFonts.css">
 </head>
+
 <body>
-    
+
+    <div class="aboutus-container">
+        <header class="header__absolute">
+            <div class="imgWrapper">
+                <img src="../images/icons/009-chameleon.png" alt="chameleon logo" height="100%" width="100%">
+            </div>
+            <div class="titleWrapper">
+                <h1>THE ZOO</h1>
+                <h2>KEEPERS</h2>
+            </div>
+        </header>
+
+        <section class="header__picture"></section>
+
+        <section class="team-content team-content__background">
+            <div class="team-content__header">
+                <div class="team-content__our-team">OUR TEAM</div>
+                <div class="flex-horizontal-center">
+                    <!--Change out all info with code later, also generate elemets-->
+                    <div class="team-content__button"> Member 1 </div>
+                    <div class="team-content__button"> Member 2 </div>
+                    <div class="team-content__button"> Member 3 </div>
+                    <div class="team-content__button"> Member 4 </div>
+                    <div class="team-content__button team-content__button--active"> Member 5 </div>
+                </div>
+            </div>
+            <div class="team-content__area team-content__area-background">
+                <!--Change out all info with code later, also generate elemets-->
+                <div class="flex-horizontal-center">
+                    <p class="team-content__member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Delectus
+                        libero nulla quasi adipisci, eligendi exercitationem quidem, dignissimos inventore amet quod
+                        alias
+                        assumenda, perspiciatis natus facere id qui repellendus dolorum dolores!</p>
+
+                </div>
+                <img class="team-content__member-picture" src="../images/team/tobias.jpg  " alt="jasmine" width="100%"
+                    height="australia-zoo">
+                <div class="flex-vertical-center">
+                    <p class="team-content__member-fname">firstname</p>
+                    <p class="team-content__member-lname">lastname</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section socialmedia">
+                    <div class="social-icons">
+                        <a href="https://github.com/jasminedns/australia-zoo" target="_blank"><img
+                                src="../images/icons/github.png" alt="github-icon"></a>
+                        <a href="https://www.instagram.com/animalsaustralia/" target="_blank"><img
+                                src="../images/icons/instagram.png" alt="instagram-icon"></a>
+                        <a href="https://www.nationalgeographic.com/" target="_blank"><img
+                                src="../images/icons/national-georaphic.png" alt="national-georaphic-icon"></a>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>Copyright 2024 - The Zookeepers</p>
+                    </div>
+                </div>
+                <div class="footer-section subscribe">
+                    <form class="newsletter">
+                        <label for="email">Subscribe to our newsletter!</label>
+                        <input class="email-input" type="email" id="email" name="email" placeholder="Email" required>
+                        <button type="submit">Subscribe!</button>
+                    </form>
+                </div>
+                <div class="footer-section partners">
+                    <a href="https://www.nationalgeographic.com" target="_blank">National Georaphic</a>
+                    <a href="https://www.worldanimalprotection.org.au" target="_blank">World Animal Protection</a>
+                    <a href="html/aboutus.html">About Us</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
 </body>
+
 </html>
