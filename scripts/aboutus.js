@@ -26,7 +26,7 @@ const setIntroductionInfo = (firstEl, lastEl, infoText) => {
     infoText.classList.add("medium-horizontal-padding");
     firstEl.textContent = "the";
     lastEl.textContent = "zookepers";
-    infoText.textContent = `Hello! Where are ${allTeamMembers.length} people currently working at this Zoo. We are a small team spreading out our work hours around the clock. So people work day-time, others work night-time to keep the work flowing. Our team is called "The Zookeepers"!`
+    infoText.textContent = `Hello! We are ${allTeamMembers.length} people currently working at this Zoo. We are a small team spreading out our work hours around the clock. So people work day-time, others work night-time to keep the work flowing. Our team is called "The Zookeepers"!`
 }
 
 const createButtonsAndEvents = () => {
