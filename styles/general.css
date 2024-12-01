@@ -43,6 +43,7 @@ header {
 }
 
 body {
+
     margin: 0;
     font-family: 'KoHo';
     color: var(--textcolor-secondary);
@@ -54,7 +55,7 @@ body {
     top: 20px;
     right: 20px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 2000;
     padding: 10px;
     border-radius: var(--border-radius);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
@@ -85,6 +86,7 @@ body {
     padding-top: 50px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     display: flex;
+    z-index: 1500;
     justify-content: center;
     align-items: center;
     opacity: 0; /* Initially hidden */
@@ -95,6 +97,7 @@ body {
 .side-menu.open {
     opacity: 1;
     visibility: visible;
+    transform: translateX(0);
 }
 
 .side-menu ul {
