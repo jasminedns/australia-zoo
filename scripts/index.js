@@ -131,3 +131,19 @@ const yellowTailedBlackCockatoo = {
     weight: "900g",
     found: "Southeastern Australia"
 };
+
+// Wait for DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".sidebar-button");
+
+    // Add event listeners for button clicks
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Remove highlight class from all buttons
+            buttons.forEach((btn) => btn.classList.remove("highlight"));
+
+            // Add highlight class to the clicked button
+            button.classList.add("highlight");
+        });
+    });
+});

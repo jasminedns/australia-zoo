@@ -196,3 +196,42 @@ footer {
 .medium-horizontal-padding {
  padding: 0 3rem;
 }
+
+/* Sidebar Button Styles */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-button {
+    font-size: var(--base-font);
+    color: var(--button-tertiary);
+    background-color: transparent;
+    border: none;
+    padding: var(--base-padding);
+    margin: var(--small-margin) 0;
+    text-align: left;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-button:hover {
+    background-color: var(--button-main);
+    color: var(--textcolor-secondary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-button:active {
+    font-weight: bold;
+    background-color: var(--button-secondary-hover);
+    color: var(--textcolor-secondary);
+}
+
+.sidebar-button.highlight {
+    background-color: var(--button-secondary);
+    color: var(--textcolor-secondary);
+    font-weight: bold;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
