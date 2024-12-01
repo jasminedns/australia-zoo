@@ -25,10 +25,12 @@ const createMembers = () => {
 }
 
 const setIntroductionInfo = (firstEl, lastEl, infoText) => {
+    infoText.classList.add("medium-horizontal-padding");
     firstEl.textContent = "the";
     lastEl.textContent = "zookepers";
     infoText.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minima ipsa fugiat iste nobis vitae provident magnam explicabo omnis quaerat tempore! Quae minima tenetur, possimus repudiandae numquam explicabo ab exercitationem! ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque laudantium, amet laborum necessitatibus temporibus nesciunt sint quasi doloremque sunt laboriosam doloribus cupiditate, ea quaerat hic earum enim corporis nobis?"
 }
+
 const createButtonsAndEvents = () => {
     let parent = document.querySelector(".team-content__button-container");
 
@@ -49,6 +51,7 @@ const createButtonsAndEvents = () => {
                 document.querySelector(".team-content__picture-area").classList.add("hidden");
                 return;
             }
+            
             memberFname_el.textContent = splitName[0];
             memberLname_el.textContent = splitName[1];
 
@@ -62,10 +65,9 @@ const createButtonsAndEvents = () => {
                 if (allTeamButtons[k].classList.contains("team-content__button--active"))
                     allTeamButtons[k].classList.remove("team-content__button--active")
             }
+
             allTeamButtons[index].classList.add("team-content__button--active")
-
-
-
+            memberInfo_el.classList.remove("medium-horizontal-padding");
         })
 
         parent.appendChild(button);
@@ -79,6 +81,5 @@ const InitSetup = () => {
     setIntroductionInfo(memberFname_el, memberLname_el, memberInfo_el);
 }
 
+/* Init */
 InitSetup();
-
-
