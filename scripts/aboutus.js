@@ -1,4 +1,3 @@
-/* Variables */
 let allTeamMembers = [];
 let allTeamButtons = [];
 
@@ -7,7 +6,6 @@ let memberPicture_el = document.querySelector(".team-content__member-picture");
 let memberFname_el = document.querySelector(".team-content__member-fname");
 let memberLname_el = document.querySelector(".team-content__member-lname");
 
-/* Functions */
 function TeamMember(fullname, hobbies, country, topFiveAnimals, picture) {
     this.fullname = fullname;
     this.hobbies = hobbies;
@@ -28,7 +26,7 @@ const setIntroductionInfo = (firstEl, lastEl, infoText) => {
     infoText.classList.add("medium-horizontal-padding");
     firstEl.textContent = "the";
     lastEl.textContent = "zookepers";
-    infoText.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minima ipsa fugiat iste nobis vitae provident magnam explicabo omnis quaerat tempore! Quae minima tenetur, possimus repudiandae numquam explicabo ab exercitationem! ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque laudantium, amet laborum necessitatibus temporibus nesciunt sint quasi doloremque sunt laboriosam doloribus cupiditate, ea quaerat hic earum enim corporis nobis?"
+    infoText.textContent = `Hello! Where are ${allTeamMembers.length} people currently working at this Zoo. We are a small team spreading out our work hours around the clock. So people work day-time, others work night-time to keep the work flowing. Our team is called "The Zookeepers"!`
 }
 
 const createButtonsAndEvents = () => {
