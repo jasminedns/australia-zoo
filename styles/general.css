@@ -290,3 +290,7 @@ footer {
  padding: 0 3rem;
 
 }
+
+.hidden {
+    display: none;
+}
