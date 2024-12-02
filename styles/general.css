@@ -17,6 +17,7 @@ html {
 body {
     height: 100%;
     margin: 0;
+    color: var(--textcolor-secondary);
 }
 
 header {
@@ -40,6 +41,7 @@ header {
 
 .titleWrapper h1, .titleWrapper h2 {
     font-family: 'ZillaSlab';
+    color: #000;
 }
 
 body {
