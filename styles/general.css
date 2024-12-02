@@ -201,7 +201,7 @@ footer {
 
 /* Sidebar styling */
 .sidebar {
-    background-color: #F5F0D7; /* Main background for sidebar */
+    color: var(--textcolor-secondary);
     padding: var(--base-padding);
     border-radius: var(--border-radius);
 }
@@ -210,11 +210,11 @@ footer {
 .sidebar-button {
     background-color: transparent;
     border: none;
+    border-radius: var(--border-radius);
     padding: var(--small-padding) var(--base-padding);
     font-size: var(--base-font);
     color: var(--textcolor-main);
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Hover effects */
