@@ -51,7 +51,7 @@ body {
 
 /* Hamburger Menu Icon */
 .hamburger-menu {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
