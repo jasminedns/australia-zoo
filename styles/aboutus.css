@@ -1,0 +1,115 @@
+.header__absolute {
+    position: absolute;
+}
+
+.header__picture {
+    background-image: url(../images/background/reptiles-background.jpg);
+    background-position: right -15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60%;
+    width: 100%;
+}
+
+.aboutus-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-content__background {
+    background-image: url(../images/textures/texture-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-content__our-team {
+    font-size: var(--large-font);
+    color: var(--title-main);
+    font-family: "Koho", sans-serif;
+}
+
+.team-content__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.team-content__button {
+    text-align: center;
+    padding: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--textcolor-main);
+    margin: 1rem 1rem;
+    font-family: "KoHo";
+    font-weight: bold;
+
+    &:hover {
+        background-color: var(--button-main);
+        border-radius: var(--border-radius);
+    }
+}
+.team-content__button--active {
+    background-color: var(--button-main);
+    border-radius: var(--border-radius);
+}
+.team-content__area {
+    display: flex;
+    max-width: 80rem;
+    height: 30rem;
+    justify-content: start;
+    margin-bottom: 7.5rem;
+}
+
+.team-content__area-background {
+    background-image: url(../images/textures/texture2-backgorund.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-content__member-picture {
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    flex:1;
+}
+
+.team-content__member-info {
+    flex:1;
+    text-align: center;
+    align-self: center;
+    padding-left: 4rem;
+    font-family: "Koho", sans-serif;
+    color: var(--title-tertiary);
+    font-size: var(--base-font);
+}
+
+.team-content__member-fname,
+.team-content__member-lname {
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    font-size: var(--large-font);
+    color: var(--textcolor-main);
+    padding-right: 3rem;
+    margin: 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.team-content__member-lname {
+    color: var(--title-tertiary);
+}
+
+.team-content__member-fname {
+    color: var(--title-secondary);
+}
