@@ -15,11 +15,11 @@ function TeamMember(fullname, hobbies, country, topFiveAnimals, picture) {
 }
 
 const createMembers = () => {
-    allTeamMembers.push(new TeamMember("Tobias Kjernell", ["Music", "Spicy food", "Movies and TV-series", "Long naps"], "Sweden", ["Rabbit", "Cat", "Dog", "Squirrel", "Dolphin"], "../images/team/tobias.jpg"));
-    allTeamMembers.push(new TeamMember("Srilatha Potnuru", ["Badminton"], "India", ["Dog", "Parrot", "Cat", "Peacock", "Panda"], "../images/team/srilatha.jpg"));
-    allTeamMembers.push(new TeamMember("Caroline Lindbom", ["Hiking"], "Sweden", ["Dog", "Alpaca", "Raven", "Owl", "Cat"], "../images/team/caroline.jpg"));
-    allTeamMembers.push(new TeamMember("Mariym Aqbal", ["Reading", "Watching historical films", "Music", "Cricket", "Tennis", "Football", "Hockey"], "Pakistan", ["Cat", "Rabbit", "Panda", "Kangaroo", "Pigeon"], "../images/team/mariym.png"));
-    allTeamMembers.push(new TeamMember("Jasmine Danese", ["Gaming", "Procrastinate"], "Italy", ["Otter", "Quokka", "Capybara", "Raccoon", "Fox"], "../images/team/jasmine.jpg"));
+    allTeamMembers.push(new TeamMember("Tobias Kjernell", ["Music", "Spicy food", "Movies and TV-series", "Long naps"], "Sweden", ["Rabbit", "Cat", "Dog", "Squirrel", "Dolphin"], "tobias.jpg"));
+    allTeamMembers.push(new TeamMember("Srilatha Potnuru", ["Badminton"], "India", ["Dog", "Parrot", "Cat", "Peacock", "Panda"], "srilatha.jpg"));
+    allTeamMembers.push(new TeamMember("Caroline Lindbom", ["Hiking"], "Sweden", ["Dog", "Alpaca", "Raven", "Owl", "Cat"], "caroline.jpg"));
+    allTeamMembers.push(new TeamMember("Mariym Aqbal", ["Reading", "Watching historical films", "Music", "Cricket", "Tennis", "Football", "Hockey"], "Pakistan", ["Cat", "Rabbit", "Panda", "Kangaroo", "Pigeon"], "mariym.png"));
+    allTeamMembers.push(new TeamMember("Jasmine Danese", ["Gaming", "Procrastinate"], "Italy", ["Otter", "Quokka", "Capybara", "Raccoon", "Fox"], "jasmine.jpg"));
 }
 
 const setIntroductionInfo = (firstEl, lastEl, infoText) => {
@@ -53,7 +53,7 @@ const createButtonsAndEvents = () => {
             memberFname_el.textContent = splitName[0];
             memberLname_el.textContent = splitName[1];
 
-            memberPicture_el.src = allTeamMembers[index].picture;
+            memberPicture_el.src = `../images/team/${allTeamMembers[index].picture}`;
             memberPicture_el.alt = `Photo of ${splitName[0] ?? "error"}`;
             document.querySelector(".team-content__picture-area").classList.remove("hidden")
 
