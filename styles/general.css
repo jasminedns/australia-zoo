@@ -313,7 +313,6 @@ footer {
         border-top: 1px solid var(--border-color);
         width: 20rem;
         text-align: center;
-        align-items: center;
     }
 
     .footer-section {
