@@ -6,3 +6,7 @@ hamburgerMenu.addEventListener('click', () => {
     sideMenu.classList.toggle('open');
     hamburgerMenu.classList.toggle('open');
 });
+
+//Force collapse menu if we going "backwards"
+sideMenu.classList.remove("open");
+hamburgerMenu.classList.remove("open");
