@@ -92,15 +92,15 @@ const ourBirds = () => {
 }
 
 const defaultSection2Content = () => {
-    birdFirstName.textContent = `Feathered`
-    birdLastName.textContent = `dream`
+    birdFirstNameEl.textContent = `Feathered`
+    birdLastNameEl.textContent = `dream`
 
-    birdImg.classList.add("hidden")
+    birdImgEl.classList.add("hidden")
 
-    birdDesc.textContent = `At our zoo, we treat our birds like the VIPs (Very Important Parrots) they are! Each bird gets a custom-built habitat that’s more luxurious than 
+    birdDescEl.textContent = `At our zoo, we treat our birds like the VIPs (Very Important Parrots) they are! Each bird gets a custom-built habitat that’s more luxurious than 
     a five-star resort, complete with all the amenities they could ever want. Our avian team makes sure every bird is in tip-top shape, well-fed, and never bored. We even 
     have birdie spa days with feather fluffing and beak buffing. Our goal is to make sure our feathered friends are living their best lives, and trust us, they’re loving every minute of it!`
-    readMore.classList.add("hidden")
+    readMoreEl.classList.add("hidden")
 }
 
 const buttonsAndEvents = () => {
@@ -109,7 +109,7 @@ const buttonsAndEvents = () => {
         
             animalDiv.textContent = birds[birdNumber].name
             animalDiv.classList.add("animalMenu__element")
-            animalMenu.appendChild(animalDiv)
+            animalMenuEl.appendChild(animalDiv)
             
             let animalMenuEls = document.querySelectorAll(".animalMenu__element")
         
@@ -120,31 +120,31 @@ const buttonsAndEvents = () => {
                 if (birdButton === 2) {
                     let splitName = birds[birdButton].name.split(" ")
         
-                    birdFirstName.textContent = splitName[0];
-                    birdLastName.textContent = `${splitName[1]} ${splitName[2]}`
+                    birdFirstNameEl.textContent = splitName[0];
+                    birdLastNameEl.textContent = `${splitName[1]} ${splitName[2]}`
         
-                    birdLastName.classList.remove("hidden")
-                    birdFirstName.classList.add("section-2__title--active")
+                    birdLastNameEl.classList.remove("hidden")
+                    birdFirstNameEl.classList.add("section-2__title--active")
         
                 } else { 
-                    birdFirstName.textContent = birds[birdButton].name;
-                    birdLastName.textContent = ``;
+                    birdFirstNameEl.textContent = birds[birdButton].name;
+                    birdLastNameEl.textContent = ``;
         
-                    birdLastName.classList.add("hidden")
+                    birdLastNameEl.classList.add("hidden")
                 }
         
-                birdImg.classList.remove("hidden")
-                birdImg.src = birds[birdButton].image
+                birdImgEl.classList.remove("hidden")
+                birdImgEl.src = birds[birdButton].image
 
-                birdDesc.textContent = birds[birdButton].shortDescription
-                readMore.classList.remove("hidden")
-                readMore.textContent = `Read more...`
+                birdDescEl.textContent = birds[birdButton].shortDescription
+                readMoreEl.classList.remove("hidden")
+                readMoreEl.textContent = `Read more...`
 
             })
 
-            readMore.addEventListener("click", () => {
-                birdDesc.textContent = birds[birdButton].fulldescription
-                readMore.textContent = ``;
+            readMoreEl.addEventListener("click", () => {
+                birdDescEl.textContent = birds[birdButton].fulldescription
+                readMoreEl.textContent = ``;
             })
         })
     }        
