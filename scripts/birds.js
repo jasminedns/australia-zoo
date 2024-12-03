@@ -74,10 +74,10 @@ const addBirds = () => {
 }
 
 let animalMenu = document.querySelector(".animalmenu__cointainer")
-let birdFirstName = document.querySelector(".section-2__title--changeContent-1")
-let birdLastName = document.querySelector(".section-2__title--changeContent-2")
-let birdImg = document.querySelector(".section-2__img--changeContent")
-let birdDesc = document.querySelector(".section-2__text--changeContent")
+let birdFirstNameEl = document.querySelector(".section-2__title--changeContent-1")
+let birdLastNameEl = document.querySelector(".section-2__title--changeContent-2")
+let birdImgEl = document.querySelector(".section-2__img--changeContent")
+let birdDescEl = document.querySelector(".section-2__text--changeContent")
 let readMore = document.querySelector(".section-2__text--readmore");
 
 
@@ -140,11 +140,11 @@ const buttonsAndEvents = () => {
                 readMore.classList.remove("hidden")
                 readMore.textContent = `Read more...`
 
-                readMore.addEventListener("click", () => {
-                    birdDesc.textContent = birds[birdButton].fulldescription
-                    readMore.textContent = ``;
-                })
+            })
 
+            readMore.addEventListener("click", () => {
+                birdDesc.textContent = birds[birdButton].fulldescription
+                readMore.textContent = ``;
             })
         })
     }        
