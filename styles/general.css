@@ -124,6 +124,7 @@ body {
 
 .side-menu ul li {
     padding: 20px;
+    font-weight: bold;
 }
 
 .side-menu ul li a {
