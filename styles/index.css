@@ -87,7 +87,7 @@ a {
 }
 
 a:hover {
-    color: aqua;
+    color: var(--title-main);
     text-decoration: underline;
 }
 
