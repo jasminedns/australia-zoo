@@ -2,7 +2,7 @@ body {
     font-family: 'KoHo';
 }
 
-span {
+.section-1__title--changeContent-1, .section-1__title--changeContent-2, .section-2__title--changeContent-1, .section-2__title--changeContent-2 {
     font-family: 'Love Ya Like A Sister';
     font-size: var(--large-font);
     margin: 0;
@@ -30,7 +30,7 @@ span {
     align-items: center;
     display: flex;
     padding: var(--large-padding) var(--large-padding) 0 var(--large-padding);
-    width: 75%;
+    width: 85%;
 }
 
 .section-1 {
