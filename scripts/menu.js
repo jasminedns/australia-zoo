@@ -8,5 +8,9 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 //Force collapse menu if we going "backwards"
-sideMenu.classList.remove("open");
-hamburgerMenu.classList.remove("open");
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        sideMenu.classList.remove("open");
+        hamburgerMenu.classList.remove("open");
+    }
+});
