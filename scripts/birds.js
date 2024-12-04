@@ -73,11 +73,11 @@ const addBirds = () => {
     birds.push(bird3);
 }
 
-let animalMenuEl = document.querySelector(".animalmenu__cointainer")
-let birdFirstNameEl = document.querySelector(".section-2__title--changeContent-1")
-let birdLastNameEl = document.querySelector(".section-2__title--changeContent-2")
-let birdImgEl = document.querySelector(".section-2__img--changeContent")
-let birdDescEl = document.querySelector(".section-2__text--changeContent")
+let animalMenuEl = document.querySelector(".animalmenu__cointainer");
+let birdFirstNameEl = document.querySelector(".section-2__title--changeContent-1");
+let birdLastNameEl = document.querySelector(".section-2__title--changeContent-2");
+let birdImgEl = document.querySelector(".section-2__img--changeContent");
+let birdDescEl = document.querySelector(".section-2__text--changeContent");
 let readMoreEl = document.querySelector(".section-2__text--readmore");
 
 
@@ -105,13 +105,13 @@ const defaultSection2Content = () => {
 
 const buttonsAndEvents = () => {
     for (let birdNumber = 0; birdNumber < birds.length; birdNumber++) {
-        let animalDiv = document.createElement("div")
+        let animalDiv = document.createElement("div");
         
             animalDiv.textContent = birds[birdNumber].name
             animalDiv.classList.add("animalMenu__element")
             animalMenuEl.appendChild(animalDiv)
             
-            let animalMenuEls = document.querySelectorAll(".animalMenu__element")
+            let animalMenuEls = document.querySelectorAll(".animalMenu__element");
         
             animalMenuEls.forEach((item, birdButton) => { item.addEventListener("click", () => {
                 animalMenuEls.forEach(e => e.classList.remove("animalMenu__element--active"))
