@@ -2,6 +2,14 @@ body {
     font-family: 'KoHo';
 }
 
+.header__picture {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-height: 50%;
+    width: 100%;
+}
+
 .section-1__title--changeContent-1, .section-1__title--changeContent-2, .section-2__title--changeContent-1, .section-2__title--changeContent-2 {
     font-family: 'Love Ya Like A Sister';
     font-size: var(--large-font);
