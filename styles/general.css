@@ -67,7 +67,8 @@ header {
     z-index: 2000;
     padding: 10px;
     border-radius: var(--border-radius);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
     background-color: var(--title-tertiary);
 }
 
@@ -88,8 +89,10 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%; /* Full screen width */
-    height: 100%; /* Full screen height */
+    width: 100%;
+    /* Full screen width */
+    height: 100%;
+    /* Full screen height */
     color: var(--textcolor-main);
     transition: 0.3s ease-in-out;
     padding-top: 50px;
@@ -98,8 +101,10 @@ header {
     z-index: 1500;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Hide by default */
+    opacity: 0;
+    /* Initially hidden */
+    visibility: hidden;
+    /* Hide by default */
     background-color: var(--title-tertiary);
 }
 
@@ -125,14 +130,16 @@ header {
     text-decoration: none;
     color: var(--title-main);
     font-size: 30px;
-    letter-spacing: 2px; /* Slightly spaced letters */
+    letter-spacing: 2px;
+    /* Slightly spaced letters */
     display: block;
     transition: color 0.3s, letter-spacing 0.3s;
 }
 
 .side-menu ul li a:hover {
-    color: var( --button-secondary);
-    letter-spacing: 5px; /* Increase letter-spacing on hover */
+    color: var(--button-secondary);
+    letter-spacing: 5px;
+    /* Increase letter-spacing on hover */
 }
 
 /* Menu Open/Close Animations */
@@ -141,7 +148,8 @@ header {
 }
 
 .hamburger-menu.open .line:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
+    opacity: 0;
+    /* Hide the middle line */
 }
 
 .hamburger-menu.open .line:nth-child(3) {
@@ -319,18 +327,71 @@ body {
 
 /* Hover effects */
 .sidebar-button:hover {
-    background-color: var(--button-main); /* Orange background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: var(--button-main);
+    /* Orange background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
 }
 
 /* Active/Click effect */
 .sidebar-button:active {
-    font-weight: bold; /* Bolder text when clicked */
+    font-weight: bold;
+    /* Bolder text when clicked */
 }
 
 /* Highlighted Button */
 .sidebar-button.highlight {
-    background-color: var(--button-tertiary); /* Light background for the active/highlighted button */
-    font-weight: bold; /* Bold text when highlighted */
-    color: var(--title-secondary); /* Secondary text color */
+    background-color: var(--button-tertiary);
+    /* Light background for the active/highlighted button */
+    font-weight: bold;
+    /* Bold text when highlighted */
+    color: var(--title-secondary);
+    /* Secondary text color */
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .socialmedia {
+        border: none;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        width: 20rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        align-items: start;
+        padding: 20px 0;
+    }
+
+    .footer-section a {
+        margin: 10px 0;
+        color: var(--textcolor-secondary);
+        text-decoration: none;
+    }
+
+    .subscribe {
+        padding: 2rem 0;
+    }
+
+    .footer-bottom {
+        align-self: center;
+    }
+
+    .social-icons {
+        align-self: center;
+        width: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-section.partners {
+        border: none;
+        border-bottom: 1px solid var(--border-color);
+        width: 20rem;
+    }
 }
