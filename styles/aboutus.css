@@ -133,6 +133,7 @@
         flex-direction: column-reverse;
         justify-content: space-around;
         margin-bottom: 3rem;
+        padding: 3rem 0;
     }
 
     .team-content__member-fname,
@@ -142,19 +143,17 @@
     }
 
     .team-content__member-picture {
-       max-height: 30rem;
+        max-height: 25rem;
         width: auto;
-        padding: 5rem;
-
+        padding: 5rem 0;
     }
 
     .team-content__member-info {
         min-width: 15rem;
-        padding-left: 0;
-        padding-right: 0;
-        padding: 0 1rem;
-
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
+
     .team-content__picture-area {
         align-self: center;
     }
