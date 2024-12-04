@@ -146,60 +146,86 @@ const animals = {
         weight: "900g",
         found: "Southeastern Australia",
         groupPage: "birds.html",
-    }
+    },
 };    
 //Variables for the name of the animal
 //Var for text information animal
 //Var for images
 let activeAnimal = null;
 
+// Function to update the main content with a welcome message or animal summary
 function updateContent(animal = null) {
-    const welcomeMessage = document.getElementById("welcome-message")
+    const welcomeMessage = document.getElementById("welcome-message");
     const animalSummary = document.getElementById("animal-summary");
+    const animalImage = document.getElementById("animal-image");
+
+    // Clear previous content
+    animalSummary.textContent = '';
+    while (animalSummary.firstChild) {
+        animalSummary.removeChild(animalSummary.firstChild);
+    }
 
     if (animal) {
+        // If an animal is clicked, update the content with its summary
         welcomeMessage.textContent = animal.name;
-        animalSummary.innerHTML = `
-            <img src="${animal.image}"; alt="Image of ${animal.group}" style="width: 200px; height: auto;"><br>
-            Decsription: ${animal.shortDescription}<br>
-            Food: ${animal.food}.<br>
-            Group: ${animal.group}.<br>`;
-            const groupLink = document.createElement('a');
-            groupLink.href = animal.groupPage;
-            groupLink.textContent = 'Visit animal group page';
-            groupLink.target = '_self';
-            animalSummary.appendChild(groupLink);
+
+        const food = document.createElement("p");
+        food.textContent = `Food: ${animal.food}`;
+        animalSummary.appendChild(food);
+
+        const group = document.createElement("p");
+        group.textContent = `Group: ${animal.group}`;
+        animalSummary.appendChild(group);
+
+        const description = document.createElement("p");
+        description.textContent = `Description: ${animal.shortDescription}`;
+        animalSummary.appendChild(description);
+
+        animalImage.src = animal.image;
+        animalImage.style.display = 'block';
     } else {
-        welcomeMessage.textContent = document.getElementById("welcome-message").dataset.defaultText;
-        animalSummary.textContent = document.getElementById("animal-summary").dataset.defaultText;
+        // If no animal is clicked (or clicking the active animal again), show the welcome message
+        welcomeMessage.textContent = welcomeMessage.dataset.default;
+        animalSummary.textContent = animalSummary.dataset.default;
+        animalImage.style.display = 'none';
     }
 }
 
+// Function to handle animal button clicks
 function handleAnimalClick(animalKey) {
     const animal = animals[animalKey];
 
     if (activeAnimal === animalKey) {
+        // If the same animal is clicked again, reset to welcome message
         activeAnimal = null;
         updateContent();
     } else {
+        // Set the clicked animal as the active one
         activeAnimal = animalKey;
         updateContent(animal);
     }
 }
-//
-function populateSidebar() {
-    Object.keys(animals).forEach(animalKey => {
+
+// Function to generate animal buttons dynamically
+function generateAnimalButtons() {
+    const animalList = document.getElementById("animal-list");
+
+    for (const animalKey in animals) {
         const animal = animals[animalKey];
-        const li = document.getElementById(`${animalKey}-btn`);
+        const li = document.createElement("li");
+        li.className = "animal-button";
+        li.id = `${animalKey}-btn`;
         li.textContent = animal.name;
         li.addEventListener("click", () => handleAnimalClick(animalKey));
-    });   
+        animalList.appendChild(li);
+    }
 }
 
+// Initially, generate the animal buttons and display the welcome message
 document.getElementById("welcome-message").dataset.defaultText = document.getElementById("welcome-message").textContent;
 document.getElementById("animal-summary").dataset.defaultText = document.getElementById("animal-summary").textContent;
+generateAnimalButtons();
 updateContent();
-populateSidebar();
 
 
 

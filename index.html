@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/variables.css">
@@ -46,22 +47,15 @@
     <section class="bgImageWrapper"></section>
     <div class="main">
         <div class="sidebar" id="sidebar">  
-            <ul class="animal-list">
-                <li id="echidna-btn">ANIMAL 1</li>
-                <li id="tasmanianDevil-btn">ANIMAL 2</li>
-                <li id="quokka-btn">ANIMAL 3</li>
-                <li id="frillNeckedLizard-btn">ANIMAL 4</li>
-                <li id="hawksbillTurtle-btn">ANIMAL 5</li>
-                <li id="perentie-btn">ANIMAL 6</li>
-                <li id="cassowary-btn">ANIMAL 7</li>
-                <li id="kookaburra-btn">ANIMAL 8</li>
-                <li id="yellowTailedBlackCockatoo-btn">ANIMAL 9</li>
+            <ul class="animal-list" id="animal-list">
+               
             </ul>          
         </div>
         <div class="welcome-message" id="main-content">
-            <h1 id="welcome-message">WELCOME TO THE "ZOO KEEPERS" OFFICIAL PAGE!</h1>
-            <img class="animal-image" src="" alt="" width="100%" height="auto">
-            <P id="animal-summary">We are thrilled to have you here. Explore and enjoy your time on our platform!</P>      </div>
+            <h1 id="welcome-message" data-default="WELCOME TO THE ZOO KEEPERS OFFICIAL PAGE!">WELCOME TO THE "ZOO KEEPERS" OFFICIAL PAGE!</h1>
+            <img class="animal-image" id="animal-image" alt="" width="100%" height="auto">
+            <p id="animal-summary" data-default="We are thrilled to have you here. Explore and enjoy your time on our platform!">We are thrilled to have you here. Explore and enjoy your time on our platform!</p>
+        </div>
     </div>
 
     <footer>
