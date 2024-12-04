@@ -11,7 +11,7 @@ const animals = {
         length: "76cm",
         weight: "10kg",
         image: "images/transparent-img/echidna.png",
-        groupPage: "mammals.html"
+        groupPage: "html/mammals.html"
     },
 
     tasmanianDevil: {
@@ -25,7 +25,7 @@ const animals = {
         length: "70cm",
         weight: "10kg",
         image: "images/transparent-img/tasmanian-devil.png",
-        groupPage: "mammals.html"
+        groupPage: "html/mammals.html"
     },
 
     quokka: {
@@ -39,7 +39,7 @@ const animals = {
         length: "50cm",
         weight: "3kg",
         image: "images/transparent-img/quokka.png",
-        groupPage: "mammals.html"
+        groupPage: "html/mammals.html"
     },
 
 //Repitiles
@@ -54,7 +54,7 @@ const animals = {
         image: "images/transparent-img/frill-neck-lizard.png",
         description: "When this unique creature feels threatened, it rises on its hind legs, opens its yellow-coloured mouth, unfurls the colorful, pleated skin flap that encircles it's head, and hisses. If an attacker is unintimidated by these antics, the lizard simply turns tail, mouth and frill open, and bolts, legs splaying left and right. It continues its deliberate run wwthout stopping or looking back until reaches the safety of a tree.",
         shortDescription: "The frill-necked lizard is a reptile from northern Australia and New Guinea, known for its large, dramatic neck frill used to scare predators.",
-        groupPage: "reptiles.html",
+        groupPage: "html/reptiles.html",
     },
 
     hawksbillTurtle: {
@@ -68,7 +68,7 @@ const animals = {
         image: "images/transparent-img/hawkbill-turtle.png",
         description: "The Hawksbill Turtle gets its common name from the distinctive mouth, which resembales a bird's beak. The shell, or carapace, is covered in large overlapping scutes, which are distinctive brown/green/amber background with lighter brown streaks throughout. At the edge of the carapace they overlap in such a way as to form a serrate edge. The turtle has an elongated head and flippers which have two visible claws on the end. The flippers and head are covered in large green, brown or yellow scales. The avarge adult female weighs 50 kg and their carapace (shell) is approximately 80cm in lenght.",
         shortDescription: "The hawksbill turtle is a critically endangered sea turtle found in tropical oceans. Known for it's striking, patterned shell.",
-        groupPage: "reptiles.html",
+        groupPage: "html/reptiles.html",
     },
 
     perentie: {
@@ -82,7 +82,7 @@ const animals = {
         image: "images/transparent-img/perentie.png",
         description: "The perentie (Varanus giganteus) is the largest monitor lizard or goanna native to Australia. It is one of the largest living lizards on earth, after the Komodo dragon, Asian water monitor, crocodile monitor, and intersecting by size with Nile monitor.[3] Found west of the Great Dividing Range in the arid areas of Australia, it is rarely seen, because of its shyness and the remoteness of much of its range from human habitation. The species is considered to be a least-concern species according to the International Union for Conservation of Nature. Its status in many Aboriginal cultures is evident in the totemic relationships, and part of the Ngiṉṯaka dreaming, as well as bush tucker. It was a favoured food item among desert Aboriginal tribes, and the fat was used for medicinal and ceremonial purposes.",
         shortDescription: "The perentie is Australia's largest monitor lizard, found in arid and desert regions. Known for its speed and sharp claws, it is a skilled hunter.",
-        groupPage: "retiles.html",
+        groupPage: "html/retiles.html",
     },
  //birds
     cassowary: {
@@ -102,7 +102,7 @@ const animals = {
         length: "1.7m",
         weight: "44kg",
         found: "Queensland",
-        groupPage: "birds.html",
+        groupPage: "html/birds.html",
     },
 
     kookaburra: {
@@ -123,7 +123,7 @@ const animals = {
         length: "43cm",
         weight: "300g",
         found: "Australia wide",
-        groupPage: "birds.html",
+        groupPage: "html/birds.html",
     },
 
     yellowTailedBlackCockatoo: {
@@ -145,28 +145,23 @@ const animals = {
         length: "65cm",
         weight: "900g",
         found: "Southeastern Australia",
-        groupPage: "birds.html",
+        groupPage: "html/birds.html",
     },
 };    
-//Variables for the name of the animal
-//Var for text information animal
-//Var for images
+
 let activeAnimal = null;
 
-// Function to update the main content with a welcome message or animal summary
 function updateContent(animal = null) {
     const welcomeMessage = document.getElementById("welcome-message");
     const animalSummary = document.getElementById("animal-summary");
     const animalImage = document.getElementById("animal-image");
 
-    // Clear previous content
     animalSummary.textContent = '';
     while (animalSummary.firstChild) {
         animalSummary.removeChild(animalSummary.firstChild);
     }
 
     if (animal) {
-        // If an animal is clicked, update the content with its summary
         welcomeMessage.textContent = animal.name;
 
         const food = document.createElement("p");
@@ -181,32 +176,33 @@ function updateContent(animal = null) {
         description.textContent = `Description: ${animal.shortDescription}`;
         animalSummary.appendChild(description);
 
+        const groupLink = document.createElement('a');
+        groupLink.href = animal.groupPage;
+        groupLink.textContent = 'Visit animal group page..';
+        groupLink.target = '_self';
+        animalSummary.appendChild(groupLink);
+
         animalImage.src = animal.image;
         animalImage.style.display = 'block';
     } else {
-        // If no animal is clicked (or clicking the active animal again), show the welcome message
         welcomeMessage.textContent = welcomeMessage.dataset.default;
         animalSummary.textContent = animalSummary.dataset.default;
         animalImage.style.display = 'none';
     }
 }
 
-// Function to handle animal button clicks
 function handleAnimalClick(animalKey) {
     const animal = animals[animalKey];
 
     if (activeAnimal === animalKey) {
-        // If the same animal is clicked again, reset to welcome message
         activeAnimal = null;
         updateContent();
     } else {
-        // Set the clicked animal as the active one
         activeAnimal = animalKey;
         updateContent(animal);
     }
 }
 
-// Function to generate animal buttons dynamically
 function generateAnimalButtons() {
     const animalList = document.getElementById("animal-list");
 
@@ -221,23 +217,18 @@ function generateAnimalButtons() {
     }
 }
 
-// Initially, generate the animal buttons and display the welcome message
 document.getElementById("welcome-message").dataset.defaultText = document.getElementById("welcome-message").textContent;
 document.getElementById("animal-summary").dataset.defaultText = document.getElementById("animal-summary").textContent;
 generateAnimalButtons();
 updateContent();
 
-
-// Select all sidebar buttons
 const buttons = document.querySelectorAll('.sidebar-button');
 
-// Add click event listeners to each button
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        // Remove highlight class from all buttons
+        
         buttons.forEach(b => b.classList.remove('highlight'));
         
-        // Add highlight class to the clicked button
         button.classList.add('highlight');
     });
 });

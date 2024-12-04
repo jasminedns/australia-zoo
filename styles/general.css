@@ -295,17 +295,13 @@ footer {
     display: none;
 }
 
-
-
-/* Sidebar styling */
 .sidebar {
     color: var(--textcolor-secondary);
     padding: var(--base-padding);
     border-radius: var(--border-radius);
 }
 
-/* Sidebar Button Styling */
-.sidebar-button {
+.animal-button {
     background-color: transparent;
     border: none;
     border-radius: var(--border-radius);
@@ -315,20 +311,17 @@ footer {
     cursor: pointer;
 }
 
-/* Hover effects */
-.sidebar-button:hover {
-    background-color: var(--button-main); /* Orange background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+.animal-button:hover {
+    background-color: var(--button-main);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Active/Click effect */
-.sidebar-button:active {
-    font-weight: bold; /* Bolder text when clicked */
+.animal-button:active {
+    font-weight: bold;
 }
 
-/* Highlighted Button */
-.sidebar-button.highlight {
-    background-color: var(--button-tertiary); /* Light background for the active/highlighted button */
-    font-weight: bold; /* Bold text when highlighted */
-    color: var(--title-secondary); /* Secondary text color */
+.animal-button.highlight {
+    background-color: var(--button-tertiary);
+    font-weight: bold;
+    color: var(--title-secondary);
 }
