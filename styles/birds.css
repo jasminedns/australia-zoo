@@ -11,6 +11,10 @@ header {
     width: 100%;
 }
 
+.container__section-1, .container__section-2 {
+    user-select: none;
+}
+
 .section-1__title--changeContent-1, .section-1__title--changeContent-2, .section-2__title--changeContent-1, .section-2__title--changeContent-2 {
     text-transform: uppercase;
 }
@@ -47,10 +51,15 @@ header {
     border-radius: var(--border-radius);
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     color: var(--textcolor-secondary);
+    cursor: pointer;
     display: inline-block;
     font-weight: 600;
     margin: var(--small-margin) var(--base-margin);
     padding: var(--small-padding);
+}
+
+.animalMenu__element:hover {
+    font-weight: 700;
 }
 
 .animalMenu__element--active {
@@ -62,6 +71,7 @@ header {
 }
 
 .section-2__text--readmore {
+    color: black;
     display: inline-block;
     margin: var(--small-margin) -8px -8px -8px;
     text-align: right;
