@@ -157,6 +157,4 @@
     .team-content__picture-area {
         align-self: center;
     }
-
-    @media screen and (max-width: 769px) {}
 }
