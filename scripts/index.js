@@ -228,4 +228,17 @@ generateAnimalButtons();
 updateContent();
 
 
+// Select all sidebar buttons
+const buttons = document.querySelectorAll('.sidebar-button');
+
+// Add click event listeners to each button
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove highlight class from all buttons
+        buttons.forEach(b => b.classList.remove('highlight'));
+        
+        // Add highlight class to the clicked button
+        button.classList.add('highlight');
+    });
+});
 
