@@ -16,14 +16,13 @@ const generateMenuButtons = () => {
     for (let index = 0; index < Object.keys(pagesAndTitles).length; index++) {
         let button_li = document.createElement("li");
         let button_link = document.createElement("a");
+        let folderPath = window.location.pathname.split("/");
 
         button_parent.appendChild(button_li);
         button_li.appendChild(button_link);
 
-        let folderPath = window.location.pathname.split("/");
-
         button_link.textContent = pagesAndTitles[index][1].toUpperCase();
-        console.log(folderPath[folderPath.length - 2]);
+      
         if (folderPath[folderPath.length - 2] !== "html")
             button_link.href = index === 0 ? pagesAndTitles[index][0] : `html/${pagesAndTitles[index][0]}`;
         else
