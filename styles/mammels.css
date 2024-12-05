@@ -1,11 +1,6 @@
 header {
     position: absolute;
 }
-.mammels-background {
+.header__picture {
     background-image: url(../images/background/mammals-background.jpg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    min-height: 50%;
-    width: 100%;
 }

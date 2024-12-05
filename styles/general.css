@@ -46,6 +46,7 @@ header {
 .titleWrapper h1 {
     font-size: 1.2rem;
     margin: 24px 5px 0 0;
+    text-align: left;
 }
 
 .titleWrapper h2 {
@@ -56,6 +57,13 @@ header {
 .titleWrapper h2 {
     font-family: 'ZillaSlab';
     color: #000;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'KoHo';
+    color: var(--textcolor-secondary);
 }
 
 /* Hamburger Menu Icon */
@@ -301,11 +309,9 @@ body {
     padding: 0 3rem;
 }
 
-/* Hamburger Menu Icon */
 .hidden {
     display: none;
 }
-
 
 /* Sidebar styling */
 .sidebar {
@@ -350,6 +356,22 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+.imgWrapper {
+    height: 3rem;
+    width: 3rem;
+}
+
+.titleWrapper h1 {
+    font-size: 1rem;
+}
+
+.titleWrapper h2 {
+    font-size: 1.1rem;
+}
+
+    /* tobias footer */
+
     .footer-content {
         flex-direction: column-reverse;
         padding: 0;
