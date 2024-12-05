@@ -1,149 +1,81 @@
-/*.mammal-details {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+.container__section-1, 
+.container__section-2 {
+    user-select: none;
 }
 
-.mammal-details img {
-    max-width: 300px;
-    height: auto;
-    margin-top: 15px;
-}
-
-.mammal-details h2 {
-    color: #2c3e50;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.mammal-details p {
-    color: #7f8c8d;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.mammal-details strong {
-    color: #2c3e50;
-}
-
-
-/* Button Container and Buttons 
-.animalmenu__cointainer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-.animalmenu__cointainer li {
-    padding: 10px 15px;
-    font-family: 'KoHo', sans-serif;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;   
-}
-
-.active-mammal, .animalmenu__cointainer li:hover {
-    background-color: #4CAF50;
-    color: white;
-    border-color: #4CAF50;
-}
-
-/* Section 2 Title 
-.section-2__title {
-    font-family: 'KoHo', sans-serif;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.section-2__title--changeContent-1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
+.section-1__title--changeContent-1, 
+.section-1__title--changeContent-2, 
+.section-2__title--changeContent-1, 
 .section-2__title--changeContent-2 {
-    font-size: 2rem;
-    font-weight: normal;
-    color: #555;
+    text-transform: uppercase;
 }
 
-/* Section 2 Text 
+.section-1__text, .section-2__text {
+    padding: 0;
+}
+
 .section-2__text {
-    font-family: 'LYLAS', sans-serif;
-    color: #666;
-    line-height: 1.6;
-    text-align: center;
-    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .section-2__text--changeContent {
-    font-size: 1rem;
-    padding: 10px;
+    word-wrap: break-word;
+    margin: -8px;
+    
 }
 
- Section Image 
-.section-2__img {
-    margin: 20px auto;
-    text-align: center;
-    max-width: 300px;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    display: block;
-}*/
+.section-2__img--changeContent {
+    width: 300px;
+    
+}
 
+.animalmenu__container {
+    align-items: end; 
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
 
-
-
-/* Styles for Mammals Section */
 .animalMenu__element {
-    padding: 10px;
-    background-color: #eee;
-    margin: 5px;
+    padding: 0; 
+    background-color: var(--button-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    color: var(--textcolor-secondary);
     cursor: pointer;
-    border-radius: 5px;
+    display: inline-block;
+    font-weight: 600;
+    margin: var(--small-margin) var(--base-margin);
+    padding: var(--small-padding);
+}
+
+.animalMenu__element:hover {
+    background-color: var(--button-main);
+    border-radius: var(--border-radius);
 }
 
 .animalMenu__element--active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.read-more-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.read-more-button:hover {
-    background-color: #45a049;
+    background-color: var(--button-main);
+    border-radius: var(--border-radius);
 }
 
 .hidden {
     display: none;
 }
 
-/* Styles for the Mammal description and details */
-.section-2__text {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
+.section-2__text--readmore {
+    color: black;
+    display: inline-block;
+    margin: var(--small-margin) -8px -8px -8px;
+    text-align: right;
 }
 
-.section-2__text--changeContent {
-    font-size: 16px;
-}
-
-.section-2__img--changeContent {
-    width: 100%;
+.section-2__text--readmore:hover {
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: underline;
 }
