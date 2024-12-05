@@ -152,7 +152,7 @@ const animals = {
 let activeAnimal = null;
 const welcomeMessage_el = document.getElementById("welcome-message");
 const animalSummary_el = document.getElementById("animal-summary");
-const animalImage = document.getElementById("animal-image");
+const animalImage_el = document.getElementById("animal-image");
 let defaultText = "WELCOME TO THE ZOO KEEPERS OFFICIAL PAGE!";
 let defaultSummary = "We are thrilled to have you here. Explore and enjoy your time on our platform!"
 
@@ -183,13 +183,12 @@ function updateContent(animal = null) {
         groupLink.textContent = 'Visit animal group page..';
         animalSummary_el.appendChild(groupLink);
 
-        animalImage.src = animal.image;
-        animalImage.classList.remove('hidden');
+        animalImage_el.src = animal.image;
+        animalImage_el.classList.remove('hidden');
     } else {
         welcomeMessage_el.textContent = defaultText;
         animalSummary_el.textContent = defaultSummary;
-        animalImage.classList.add('hidden');
-       
+        animalImage_el.classList.add('hidden');   
     }
 }
 
