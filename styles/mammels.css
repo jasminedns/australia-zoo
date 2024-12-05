@@ -1,4 +1,4 @@
-.mammal-details {
+/*.mammal-details {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
@@ -31,7 +31,7 @@
 }
 
 
-/* Button Container and Buttons */
+/* Button Container and Buttons 
 .animalmenu__cointainer ul {
     list-style: none;
     padding: 0;
@@ -56,7 +56,7 @@
     border-color: #4CAF50;
 }
 
-/* Section 2 Title */
+/* Section 2 Title 
 .section-2__title {
     font-family: 'KoHo', sans-serif;
     color: #333;
@@ -75,7 +75,7 @@
     color: #555;
 }
 
-/* Section 2 Text */
+/* Section 2 Text 
 .section-2__text {
     font-family: 'LYLAS', sans-serif;
     color: #666;
@@ -89,7 +89,7 @@
     padding: 10px;
 }
 
-/* Section Image */
+ Section Image 
 .section-2__img {
     margin: 20px auto;
     text-align: center;
@@ -98,4 +98,52 @@
     border: 2px solid #ccc;
     border-radius: 10px;
     display: block;
+}*/
+
+
+
+
+/* Styles for Mammals Section */
+.animalMenu__element {
+    padding: 10px;
+    background-color: #eee;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+.animalMenu__element--active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.read-more-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styles for the Mammal description and details */
+.section-2__text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.section-2__text--changeContent {
+    font-size: 16px;
+}
+
+.section-2__img--changeContent {
+    width: 100%;
+   
