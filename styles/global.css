@@ -103,6 +103,7 @@ body {
     width: 250px;
 }
 
+<<<<<<< HEAD
 .animalmenu {
     align-items: end;
     display: flex;
@@ -110,6 +111,8 @@ body {
     justify-content: center;
 }
 
+=======
+>>>>>>> 41-JD-MQheader
 ul li {
     padding: 0;
     background-color: var(--button-secondary);
@@ -120,7 +123,21 @@ ul li {
     font-weight: 600;
     margin: var(--small-margin) var(--base-margin);
     padding: var(--small-padding);
+<<<<<<< HEAD
 
+=======
+    ul li {
+        padding: 0;
+        background-color: var(--button-secondary);
+        border-radius: var(--border-radius);
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+        color: var(--textcolor-secondary);
+        display: inline-block;
+        font-weight: 600;
+        margin: var(--small-margin) var(--base-margin);
+        padding: var(--small-padding);
+    }
+>>>>>>> 41-JD-MQheader
 }
 
 .section-1__empty {
