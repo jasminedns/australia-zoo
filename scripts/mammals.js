@@ -27,7 +27,7 @@ const addMammals = () => {
         lifespan: "10 years",
         group: "mammals",
         food: "Plant eaters, they munch on shrubs and grasses",
-        shortDescription:  "A small, herbivorous marsupial known as the happiest animal due to its friendly appearance...",
+        shortDescription: "A small, herbivorous marsupial known as the happiest animal due to its friendly appearance...",
         fullDescription: "The Quokka, Setonix brachyurus, was described by early Dutch explorer, Willem de Vlamingh, 'as a kind of rat as big as a common cat'. His first sighting of the Quokka was on an island off the mouth of the Swan River. He named the island Rottenest ('rat nest') in honour of this sighting. The island is now known as Rottnest Island. Essentially the Quokka looks very much like other wallabies.It has short, very coarse and thick grey-brown fur over most of the body with lighter parts underneath. Its facial features consist of a naked nose on a short, broad face with rounded furry ears.The tail is relatively short and mostly devoid of hair. In contrast, the hair on the feet extends to cover its claws.",
         length: "50cm",
         weight: "3kg",
@@ -39,7 +39,7 @@ const addMammals = () => {
         lifespan: "50 years",
         group: "mammals",
         food: "insects such as ants and termites, beetle larvae and worms",
-        shortDescription:  "A spiny, egg-laying mammal, one of only two monotremes in the world...",
+        shortDescription: "A spiny, egg-laying mammal, one of only two monotremes in the world...",
         fullDescription: "Echidnas, also called spiny anteaters, are walking contradictions. They are mammals, but they lay eggs. They are often classified as long- or sort-beaked, but don't have beaks at all, in the traditional sense; they have fleshy noses that can be either on the long side or rather short. They don't really look like true anteaters (Myrmecophaga tridactyla), either, and they are not closely related to them. They are spiny, though; their bodies are covered with hollow, barbless quills. Echidnas are monotremes, egg-laying mammals. The only other living monotreme is the platypus.",
         length: "76cm",
         weight: "10kg",
@@ -98,7 +98,7 @@ const buttonsAndEvents = () => {
                 readMoreEl.textContent = `Read more...`;
 
                 readMoreEl.addEventListener("click", () => {
-                mammalDescEl.textContent = `${mammals[mammalButton].fullDescription}
+                    mammalDescEl.textContent = `${mammals[mammalButton].fullDescription}
                  This mammal weight up to ${mammals[mammalButton].weight}.
                  This mammal takes the food of ${mammals[mammalButton].food}.
                  Mammal lifespan is ${mammals[mammalButton].lifespan}.
