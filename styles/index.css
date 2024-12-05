@@ -75,7 +75,6 @@ header {
 .animal-image {
     width: 250px;
     height: auto;
-    display: block;
     margin: 20px auto;   
 }
 
