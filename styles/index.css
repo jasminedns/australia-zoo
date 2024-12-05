@@ -34,13 +34,8 @@ header {
     color: var(--textcolor-main);
 }
 
-.bgImageWrapper {
+.header__picture {
     background-image: url(../images/background/quokka-background.jpg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    min-height: 50%;
-    width: 100%;
 }
 
 .main {

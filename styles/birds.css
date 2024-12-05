@@ -2,13 +2,9 @@ header {
     position: absolute;
 }
 
-.birds-background {
+.header__picture {
     background-image: url(../images/background/birds-background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 50%;
-    width: 100%;
+    background-position: top;
 }
 
 .container__section-1,
