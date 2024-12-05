@@ -1,30 +1,3 @@
-/*const mammals = [
-    {
-        name: "Tasmanian Devil",
-        group: "mammals",
-        image: "../images/transparent-img/tasmanian-devil.png",
-        shortDescription: "A carnivorous marsupial found in Tasmania, known for its loud screeches...",
-        fullDescription: "The Tasmanian Devil is the world's largest surviving carnivorous marsupial. Native to Tasmania, these nocturnal animals are known for their powerful jaws and fierce temperament. Despite their reputation, they play a crucial role in maintaining ecosystem balance.",
-        diet: "Carrion, small animals, insects",
-    },
-    {
-        name: "Quokka",
-        group: "mammals",
-        image: "../images/transparent-img/quokka.png",
-        shortDescription: "A small, herbivorous marsupial known as the happiest animal due to its friendly appearance...",
-        fullDescription: "The Quokka is a small wallaby native to southwestern Australia, particularly Rottnest Island. Famous for its 'smiling' expression, it is a nocturnal herbivore that feeds on grass and leaves. Quokkas are social and thrive in groups.",
-        diet: "Grasses, leaves, and roots",
-    },
-    {
-        name: "Echidna",
-        group: "mammals",
-        image: "../images/transparent-img/echidna.png",
-        shortDescription: "A spiny, egg-laying mammal, one of only two monotremes in the world...",
-        fullDescription: "The Echidna, also known as a spiny anteater, is a monotreme found in Australia and New Guinea. Known for its spines and long snout, it feeds primarily on ants and termites. Echidnas lay eggs and are solitary creatures.",
-        diet: "Ants and termites",
-    }
-];*/
-
 let mammals = [];
 let mammalMenuEl = document.querySelector(".animalmenu__container");
 let mammalFirstNameEl = document.querySelector(".section-2__title--changeContent-1");
@@ -37,7 +10,7 @@ const addMammals = () => {
 
     mammals.push({
         name: "Tasmanian Devil",
-        image:"tasmanian-devil.png",
+        image: "tasmanian-devil.png",
         lifespan: "5 years",
         group: "mammals",
         food: "A predator, then eat meat from other animals such as wallabies and wombats",
@@ -49,8 +22,8 @@ const addMammals = () => {
     });
 
     mammals.push({
-        name: "quokka",
-        image : "quokka.png",
+        name: "Quokka",
+        image: "quokka.png",
         lifespan: "10 years",
         group: "mammals",
         food: "Plant eaters, they munch on shrubs and grasses",
@@ -123,15 +96,17 @@ const buttonsAndEvents = () => {
                 mammalDescEl.textContent = mammals[mammalButton].shortDescription;
                 readMoreEl.classList.remove("hidden");
                 readMoreEl.textContent = `Read more...`;
+
                 readMoreEl.addEventListener("click", () => {
-                mammalDescEl.textContent =  `${mammals[mammalButton].fullDescription}\n Weight:${mammals[mammalButton].weight}\n Food:${mammals[mammalButton].food}\n Lifespan:${mammals[mammalButton].lifespan}\n Length:${mammals[mammalButton].length}\n Found:${mammals[mammalButton].found}`,
-       
-        
-                readMoreEl.textContent = ``;
-    
-                    // readMoreEl.addEventListener("click", () => {
-                    //     mammalDescEl.textContent = allMammals[mammalButton].shortDescription;
-                    //     readMoreEl.textContent = `Read more...`;
+                    mammalDescEl.textContent = `${mammals[mammalButton].fullDescription}\n
+                 Weight:${mammals[mammalButton].weight}\n 
+                 Food:${mammals[mammalButton].food}\n 
+                 Lifespan:${mammals[mammalButton].lifespan}\n 
+                 Length:${mammals[mammalButton].length}\n
+                 Found:${mammals[mammalButton].found}`;
+
+
+                    readMoreEl.textContent = ``;
                 });
             });
         });
