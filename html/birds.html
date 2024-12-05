@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,50 +11,93 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/variables.css">
     <link rel="stylesheet" href="../styles/birds.css">
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/birds.js" defer></script>
 </head>
 
 <body>
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="birds.html">BIRDS</a></li>
+            <li><a href="reptiles.html">REPTILES</a></li>
+            <li><a href="mammals.html">MAMMALS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="imgWrapper">
+            <img src="../images/icons/009-chameleon.png" alt="chameleon logo" height="100%" width="100%">
+        </div>
+        <div class="titleWrapper">
+            <h1>THE ZOO</h1>
+            <h2>KEEPERS</h2>
+        </div>
+    </header>
+    <section class="bgImageWrapper birds-background"></section>
     <div class="container__section-1">
         <section class="section-1">
             <div class="section-1__text">
-                <p class="section-1__text--changeContent">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p class="section-1__text--changeContent"></p>
             </div>
             <div class="section-1__title">
-                <span class="section-1__title--changeContent-1">LOREM</span><br><span class="section1__title--changeContent-2">IPSUM</span>
+                <span class="section-1__title--changeContent-1"></span><br><span class="section-1__title--changeContent-2"></span>
             </div>
         </section>
         <div class="animalmenu">
-            <div class="animalmenu__cointainer">
-                <ul>
-                    <li>ANIMAL1</li>
-                    <li>ANIMAL2</li>
-                    <li>ANIMAL3</li>
-                </ul>
-            </div>
+            <div class="animalmenu__cointainer"></div>
         </div>
     </div>
     <div class="container__section-2">
         <section class="section-2">
             <div class="section-2__title">
-                <span class="section-2__title--changeContent-1">LOREM</span><br><span class="section-2__title--changeContent-2">IPSUM</span>
+                <span class="section-2__title--changeContent-1"></span><br><span class="section-2__title--changeContent-2"></span>
             </div>
             <div class="section-2__img">
-                <img class="section-2__img--changeContent" src="../images/transparent-img/tasmanian-devil.png" alt="lorem ipsum">
+                <img class="section-2__img--changeContent" src="" alt="">
             </div>
             <div class="section-2__text">
-                <p class="section-2__text--changeContent">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p class="section-2__text--changeContent"></p><span class="section-2__text--readmore"></span>
             </div>
         </section>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section socialmedia">
+                <div class="social-icons">
+                    <a href="https://github.com/jasminedns/australia-zoo" target="_blank"><img
+                            src="../images/icons/github.png" alt="github-icon"></a>
+                    <a href="https://www.instagram.com/animalsaustralia/" target="_blank"><img
+                            src="../images/icons/instagram.png" alt="instagram-icon"></a>
+                    <a href="https://www.nationalgeographic.com/" target="_blank"><img
+                            src="../images/icons/national-georaphic.png" alt="national-georaphic-icon"></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright 2024 - The Zookeepers</p>
+                </div>
+            </div>
+            <div class="footer-section subscribe">
+                <form class="newsletter">
+                    <label for="email">Subscribe to our newsletter!</label>
+                    <input class="email-input" type="email" id="email" name="email" placeholder="Email" required>
+                    <button type="submit">Subscribe!</button>
+                </form>
+            </div>
+            <div class="footer-section partners">
+                <a href="https://www.nationalgeographic.com" target="_blank">National Georaphic</a>
+                <a href="https://www.worldanimalprotection.org.au" target="_blank">World Animal Protection</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

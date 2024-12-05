@@ -1,0 +1,89 @@
+header {
+    position: absolute;
+}
+
+.birds-background {
+    background-image: url(../images/background/birds-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50%;
+    width: 100%;
+}
+
+.container__section-1,
+.container__section-2 {
+    user-select: none;
+}
+
+.section-1__title--changeContent-1,
+.section-1__title--changeContent-2,
+.section-2__title--changeContent-1,
+.section-2__title--changeContent-2 {
+    text-transform: uppercase;
+}
+
+.section-1__text,
+.section-2__text {
+    padding: 0;
+}
+
+.section-2__text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.section-2__text--changeContent {
+    word-wrap: break-word;
+    margin: -8px;
+}
+
+.section-2__img--changeContent {
+    width: 300px;
+}
+
+.animalmenu {
+    align-items: end;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+}
+
+.animalMenu__element {
+    padding: 0;
+    background-color: var(--button-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    color: var(--textcolor-secondary);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    margin: var(--small-margin) var(--base-margin);
+    padding: var(--small-padding);
+}
+
+.animalMenu__element:hover {
+    font-weight: 700;
+}
+
+.animalMenu__element--active {
+    background-color: var(--button-main);
+}
+
+.hidden {
+    display: none;
+}
+
+.section-2__text--readmore {
+    color: black;
+    display: inline-block;
+    margin: var(--small-margin) -8px -8px -8px;
+    text-align: right;
+}
+
+.section-2__text--readmore:hover {
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: underline;
+}

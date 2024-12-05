@@ -210,7 +210,7 @@ function generateAnimalButtons() {
     for (const animalKey in animals) {
         const animal = animals[animalKey];
         const button_li = document.createElement("li");
-        button_li.className = "animal-button";
+        button_li.className = "sidebar-button";
         button_li.id = `${animalKey}-btn`;
         button_li.textContent = animal.name;
         button_li.addEventListener("click", () => handleAnimalClick(animalKey));
