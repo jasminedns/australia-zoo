@@ -2,6 +2,14 @@ body {
     font-family: 'KoHo';
 }
 
+.header__picture {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-height: 60%;
+    width: 100%;
+}
+
 .section-1__title--changeContent-1, .section-1__title--changeContent-2, .section-2__title--changeContent-1, .section-2__title--changeContent-2 {
     font-family: 'Love Ya Like A Sister';
     font-size: var(--large-font);
@@ -95,12 +103,16 @@ body {
     width: 250px;
 }
 
-.animalmenu {
-    align-items: end;
-    display: flex;
-    height: 20%;
-    justify-content: center;
-
+ul li {
+    padding: 0;
+    background-color: var(--button-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    color: var(--textcolor-secondary);
+    display: inline-block;
+    font-weight: 600;
+    margin: var(--small-margin) var(--base-margin);
+    padding: var(--small-padding);
     ul li {
         padding: 0;
         background-color: var(--button-secondary);
