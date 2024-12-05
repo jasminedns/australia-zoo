@@ -13,7 +13,7 @@ const sideMenu = document.getElementById('sideMenu');
 const generateMenuButtons = () => {
     let button_parent = document.querySelector(".side-button-parent");
 
-    for (let index = 0; index < Object.keys(pagesAndTitles).length; index++) {
+    for (let index = 0; index < pagesAndTitles.length; index++) {
         let button_li = document.createElement("li");
         let button_link = document.createElement("a");
         let folderPath = window.location.pathname.split("/");
