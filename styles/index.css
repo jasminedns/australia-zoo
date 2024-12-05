@@ -21,9 +21,12 @@ header {
 }
 
 .sidebar ul {
-    padding: 0;
+    height: 100%;
     padding: 0px;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .sidebar ul li {
