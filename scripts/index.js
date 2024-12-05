@@ -150,44 +150,46 @@ const animals = {
 };    
 
 let activeAnimal = null;
+const welcomeMessage_el = document.getElementById("welcome-message");
+const animalSummary_el = document.getElementById("animal-summary");
+const animalImage = document.getElementById("animal-image");
+let defaultText = "WELCOME TO THE ZOO KEEPERS OFFICIAL PAGE!";
+let defaultSummary = "We are thrilled to have you here. Explore and enjoy your time on our platform!"
 
 function updateContent(animal = null) {
-    const welcomeMessage = document.getElementById("welcome-message");
-    const animalSummary = document.getElementById("animal-summary");
-    const animalImage = document.getElementById("animal-image");
+    animalSummary_el.textContent = '';
 
-    animalSummary.textContent = '';
-    while (animalSummary.firstChild) {
-        animalSummary.removeChild(animalSummary.firstChild);
+    while (animalSummary_el.firstChild) {
+        animalSummary_el.removeChild(animalSummary_el.firstChild);
     }
 
     if (animal) {
-        welcomeMessage.textContent = animal.name;
+        welcomeMessage_el.textContent = animal.name;
 
         const food = document.createElement("p");
         food.textContent = `Food: ${animal.food}`;
-        animalSummary.appendChild(food);
+        animalSummary_el.appendChild(food);
 
         const group = document.createElement("p");
         group.textContent = `Group: ${animal.group}`;
-        animalSummary.appendChild(group);
+        animalSummary_el.appendChild(group);
 
         const description = document.createElement("p");
         description.textContent = `Description: ${animal.shortDescription}`;
-        animalSummary.appendChild(description);
+        animalSummary_el.appendChild(description);
 
         const groupLink = document.createElement('a');
         groupLink.href = animal.groupPage;
         groupLink.textContent = 'Visit animal group page..';
-        groupLink.target = '_self';
-        animalSummary.appendChild(groupLink);
+        animalSummary_el.appendChild(groupLink);
 
         animalImage.src = animal.image;
-        animalImage.style.display = 'block';
+        animalImage.classList.remove('hidden');
     } else {
-        welcomeMessage.textContent = welcomeMessage.dataset.default;
-        animalSummary.textContent = animalSummary.dataset.default;
-        animalImage.style.display = 'none';
+        welcomeMessage_el.textContent = defaultText;
+        animalSummary_el.textContent = defaultSummary;
+        animalImage.classList.add('hidden');
+       
     }
 }
 
@@ -208,17 +210,15 @@ function generateAnimalButtons() {
 
     for (const animalKey in animals) {
         const animal = animals[animalKey];
-        const li = document.createElement("li");
-        li.className = "animal-button";
-        li.id = `${animalKey}-btn`;
-        li.textContent = animal.name;
-        li.addEventListener("click", () => handleAnimalClick(animalKey));
-        animalList.appendChild(li);
+        const button_li = document.createElement("li");
+        button_li.className = "animal-button";
+        button_li.id = `${animalKey}-btn`;
+        button_li.textContent = animal.name;
+        button_li.addEventListener("click", () => handleAnimalClick(animalKey));
+        animalList.appendChild(button_li);
     }
 }
 
-document.getElementById("welcome-message").dataset.defaultText = document.getElementById("welcome-message").textContent;
-document.getElementById("animal-summary").dataset.defaultText = document.getElementById("animal-summary").textContent;
 generateAnimalButtons();
 updateContent();
 
