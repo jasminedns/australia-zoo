@@ -313,14 +313,12 @@ body {
     display: none;
 }
 
-/* Sidebar styling */
 .sidebar {
     color: var(--textcolor-secondary);
     padding: var(--base-padding);
     border-radius: var(--border-radius);
 }
 
-/* Sidebar Button Styling */
 .sidebar-button {
     background-color: transparent;
     border: none;
@@ -331,28 +329,19 @@ body {
     cursor: pointer;
 }
 
-/* Hover effects */
 .sidebar-button:hover {
     background-color: var(--button-main);
-    /* Orange background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Shadow effect */
 }
 
-/* Active/Click effect */
 .sidebar-button:active {
     font-weight: bold;
-    /* Bolder text when clicked */
 }
 
-/* Highlighted Button */
 .sidebar-button.highlight {
     background-color: var(--button-tertiary);
-    /* Light background for the active/highlighted button */
     font-weight: bold;
-    /* Bold text when highlighted */
     color: var(--title-secondary);
-    /* Secondary text color */
 }
 
 @media screen and (max-width: 768px) {
