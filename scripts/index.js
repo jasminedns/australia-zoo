@@ -185,23 +185,33 @@ function updateContent(animal = null) {
 
         animalImage_el.src = animal.image;
         animalImage_el.classList.remove('hidden');
+
+        const buttons = document.querySelectorAll('.sidebar-button');
+        buttons.forEach(button => button.classList.remove('active'));
+
     } else {
         welcomeMessage_el.textContent = defaultText;
         animalSummary_el.textContent = defaultSummary;
-        animalImage_el.classList.add('hidden');   
+        animalImage_el.classList.add('hidden');  
     }
 }
 
 function handleAnimalClick(animalKey) {
     const animal = animals[animalKey];
 
+        const buttons = document.querySelectorAll('.sidebar-button');
+        buttons.forEach(button => button.classList.remove('active'));
+        
     if (activeAnimal === animalKey) {
         activeAnimal = null;
         updateContent();
     } else {
         activeAnimal = animalKey;
         updateContent(animal);
-    }
+
+        const activeButton = document.getElementById(`${animalKey}-btn`);
+        activeButton.classList.add('active');
+    } 
 }
 
 function generateAnimalButtons() {

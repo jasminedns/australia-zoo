@@ -334,14 +334,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar-button:active {
-    font-weight: bold;
-}
-
-.sidebar-button.highlight {
-    background-color: var(--button-tertiary);
-    font-weight: bold;
-    color: var(--title-secondary);
+.sidebar-button.active {
+    background-color: var(--button-main);
 }
 
 @media screen and (max-width: 768px) {
