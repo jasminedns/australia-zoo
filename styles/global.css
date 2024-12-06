@@ -2,14 +2,26 @@ body {
     font-family: 'KoHo';
 }
 
-.section-1__title--changeContent-1, .section-1__title--changeContent-2, .section-2__title--changeContent-1, .section-2__title--changeContent-2 {
+.header__picture {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60%;
+    width: 100%;
+}
+
+.section-1__title--changeContent-1,
+.section-1__title--changeContent-2,
+.section-2__title--changeContent-1,
+.section-2__title--changeContent-2 {
     font-family: 'Love Ya Like A Sister';
     font-size: var(--large-font);
     margin: 0;
 }
 
-.container__section-1, .container__section-2 {
-    align-items:  center;
+.container__section-1,
+.container__section-2 {
+    align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -23,10 +35,11 @@ body {
 
 .container__section-2 {
     background-image: url(../images/textures/texture-background.jpg);
-    justify-content:  center;
+    justify-content: center;
 }
 
-.section-1, .section-2 {
+.section-1,
+.section-2 {
     align-items: center;
     display: flex;
     padding: var(--large-padding) var(--large-padding) 0 var(--large-padding);
@@ -41,13 +54,15 @@ body {
     height: 100%;
 }
 
-.section-1__text, .section-2__text {
+.section-1__text,
+.section-2__text {
     font-weight: 600;
     margin: var(--large-margin) 0;
     padding: var(--large-padding);
 }
 
-.section-1__text--changeContent, .section-2__text--changeContent {
+.section-1__text--changeContent,
+.section-2__text--changeContent {
     font-size: 1rem;
     margin: var(--base-margin);
     text-transform: uppercase;
@@ -62,7 +77,8 @@ body {
     text-align: right;
 }
 
-.section-1__title, .section-2__title {
+.section-1__title,
+.section-2__title {
     margin: var(--large-margin) var(--large-margin) var(--large-margin) 0;
     padding: var(--large-padding);
 }
@@ -71,7 +87,10 @@ body {
     text-align: right;
 }
 
-.section-1__title--changeContent-1, .section-1__title--changeContent-2, .section-2__title--changeContent-1, .section-2__title--changeContent-2 {
+.section-1__title--changeContent-1,
+.section-1__title--changeContent-2,
+.section-2__title--changeContent-1,
+.section-2__title--changeContent-2 {
     margin: 0 var(--base-margin) var(--base-margin) var(--base-margin);
 }
 
@@ -113,6 +132,7 @@ body {
         padding: var(--small-padding);
     }
 }
+
 
 .section-1__empty {
     width: 40%;

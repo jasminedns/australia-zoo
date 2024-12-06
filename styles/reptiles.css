@@ -1,11 +1,7 @@
 header {
     position: absolute;
 }
-.reptiles-background {
+
+.header__picture {
     background-image: url(../images/background/reptile_2-background.jpg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    min-height: 50%;
-    width: 100%;
 }
