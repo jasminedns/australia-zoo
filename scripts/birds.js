@@ -73,7 +73,7 @@ const addBirds = () => {
     birds.push(bird3);
 }
 
-let animalMenuEl = document.querySelector(".animalmenu__cointainer");
+let animalMenuEl = document.querySelector(".animalmenu__container");
 let birdFirstNameEl = document.querySelector(".section-2__title--changeContent-1");
 let birdLastNameEl = document.querySelector(".section-2__title--changeContent-2");
 let birdImgEl = document.querySelector(".section-2__img--changeContent");
