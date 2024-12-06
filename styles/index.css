@@ -31,9 +31,7 @@ header {
 }
 
 .sidebar ul li {
-
     margin-bottom: 1rem;
-
     cursor: pointer;
     text-align: left;
     padding: 8px;
