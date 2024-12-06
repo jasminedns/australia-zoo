@@ -391,4 +391,10 @@ footer {
         border-bottom: 1px solid var(--border-color);
         width: 20rem;
     }
+
+    .sidebar-button {
+     border: 2px solid var(--textcolor-main);
+     margin: 0;
+     margin: 0.5rem;
+    }
 }

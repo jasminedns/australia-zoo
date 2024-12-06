@@ -7,6 +7,7 @@ body {
     height: 100%;
     font-weight: 600;
     text-align: center;
+    user-select: none;
 }
 
 .sidebar {
@@ -26,14 +27,17 @@ header {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 .sidebar ul li {
-    text-align: left; 
+
+    margin-bottom: 1rem;
+
+    cursor: pointer;
+    text-align: left;
     padding: 8px;
     font-size: 22px;
-    cursor: pointer; 
     color: var(--textcolor-main);
 }
 
@@ -47,7 +51,7 @@ header {
     width: 100%;
     display: flex;
     background-image: url(../images/textures/texture-background.jpg);
-    background-size: cover; 
+    background-size: cover;
 }
 
 .welcome-message {
@@ -60,12 +64,12 @@ header {
         color: black;
         text-decoration: none;
     }
-    
+
     a:hover {
         color: var(--title-main);
         text-decoration: underline;
     }
-    
+
     a:visited {
         color: black;
     }
@@ -74,9 +78,10 @@ header {
 .welcome-message h3 {
     color: var(--title-main);
     font-size: var(--large-font);
-    line-height: 83.2px; 
+    line-height: 83.2px;
     text-align: center;
     margin: 16px 0px 0px 0px;
+    padding: 0 3rem;
 }
 
 .welcome-message p {
@@ -84,13 +89,39 @@ header {
     text-align: center;
     font-size: var(--base-font);
     line-height: 28.6px;
+    padding: 0 3rem;
 }
 
 .animal-image {
     width: 250px;
     height: auto;
-    margin: 20px auto;   
+    margin: 20px auto;
 }
 
+@media screen and (max-width: 768px) {
 
+    .main {
+        flex-direction: column;
+    }
 
+    .sidebar {
+        height: auto;
+        width: auto;
+    }
+
+    .sidebar ul {
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .welcome-message p {
+        padding: 0 2rem;
+    }
+
+    .welcome-message h3 {
+        padding: 0 1rem;
+    }
+}
