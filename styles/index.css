@@ -4,7 +4,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100%;
     font-weight: 600;
     text-align: center;
 }
@@ -12,7 +12,7 @@ body {
 .sidebar {
     font-family: 'KoHo';
     font-weight: bold;
-    width : 189px;
+    width: 250px;
     height: 100%;
 }
 
@@ -21,29 +21,28 @@ header {
 }
 
 .sidebar ul {
-    padding: 0;
+    height: 100%;
     padding: 0px;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .sidebar ul li {
-    text-align: center;
+    text-align: left; 
     padding: 8px;
     font-size: 22px;
     cursor: pointer; 
     color: var(--textcolor-main);
 }
 
-.bgImageWrapper {
+.header__picture {
     background-image: url(../images/background/quokka-background.jpg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    min-height: 50%;
-    width: 100%;
 }
 
 .main {
+    color: var(--textcolor-main);
     flex: 1;
     width: 100%;
     display: flex;
@@ -54,13 +53,30 @@ header {
 .welcome-message {
     align-self: center;
     flex: 1;
+
+    a {
+        display: block;
+        margin-top: 10px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: var(--title-main);
+        text-decoration: underline;
+    }
+    
+    a:visited {
+        color: black;
+    }
 }
 
-.welcome-message h1 {
+.welcome-message h3 {
     color: var(--title-main);
     font-size: var(--large-font);
-    line-height: 83.2px;
+    line-height: 83.2px; 
     text-align: center;
+    margin: 16px 0px 0px 0px;
 }
 
 .welcome-message p {
@@ -69,4 +85,12 @@ header {
     font-size: var(--base-font);
     line-height: 28.6px;
 }
+
+.animal-image {
+    width: 250px;
+    height: auto;
+    margin: 20px auto;   
+}
+
+
 
