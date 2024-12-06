@@ -7,21 +7,6 @@ header {
     background-position: top;
 }
 
-.container__section-1,
-.container__section-2 {
-    user-select: none;
-}
-
-.section-2__text {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.section-2__text--changeContent {
-    margin: var(--base-margin);
-}
-
 .animalMenu__element {
     padding: 0;
     background-color: var(--button-secondary);
@@ -45,17 +30,4 @@ header {
 
 .hidden {
     display: none;
-}
-
-.section-2__text--readmore {
-    color: black;
-    display: inline-block;
-    margin: var(--base-margin);
-    text-align: right;
-}
-
-.section-2__text--readmore:hover {
-    cursor: pointer;
-    font-weight: 700;
-    text-decoration: underline;
 }
