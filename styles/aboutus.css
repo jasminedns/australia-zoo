@@ -51,9 +51,11 @@
     font-weight: bold;
     user-select: none;
 
-    &:hover {
-        background-color: var(--button-main);
-        border-radius: var(--border-radius);
+    @media (pointer: fine) {
+        &:hover {
+            background-color: var(--button-main);
+            border-radius: var(--border-radius);
+        }
     }
 }
 
@@ -151,5 +153,13 @@
 
     .team-content__picture-area {
         align-self: center;
+    }
+
+    @media(hover: none) {
+
+        .team-content__button:hover {
+            background-color: none;
+            border-radius: none;
+        }
     }
 }

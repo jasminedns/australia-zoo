@@ -328,10 +328,12 @@ body {
     color: var(--textcolor-main);
     cursor: pointer;
 }
-
-.sidebar-button:hover {
-    background-color: var(--button-main);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+@media (pointer: fine) {
+    
+    .sidebar-button:hover {
+        background-color: var(--button-main);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .sidebar-button.active {
@@ -340,18 +342,18 @@ body {
 
 @media screen and (max-width: 768px) {
 
-.imgWrapper {
-    height: 3rem;
-    width: 3rem;
-}
+    .imgWrapper {
+        height: 3rem;
+        width: 3rem;
+    }
 
-.titleWrapper h1 {
-    font-size: 1rem;
-}
+    .titleWrapper h1 {
+        font-size: 1rem;
+    }
 
-.titleWrapper h2 {
-    font-size: 1.1rem;
-}
+    .titleWrapper h2 {
+        font-size: 1.1rem;
+    }
 
     /* tobias footer */
 
@@ -401,8 +403,16 @@ body {
     }
 
     .sidebar-button {
-     border: 2px solid var(--textcolor-main);
-     margin: 0;
-     margin: 0.5rem;
+        border: 2px solid var(--textcolor-main);
+        margin: 0;
+        margin: 0.5rem;
+    }
+
+    @media(hover: none) {
+
+        .sidebar-button:hover {
+            background-color: none;
+            box-shadow: none;
+        }
     }
 }
