@@ -121,5 +121,6 @@ header {
 
     .welcome-message h3 {
         padding: 0 1rem;
+        font-size: 48px;
     }
 }
