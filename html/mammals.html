@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mammals</title>
     <link rel="stylesheet" href="../styles/Fonts/LYLAS_WOFF/LYLASFonts.css">
     <link rel="stylesheet" href="../styles/Fonts/KoHo_WOFF/KohoFonts.css">
+    <link rel="stylesheet" href="../styles/Fonts/Zilla_Slab_WOFF/ZillaSlabFonts.css">
     <link rel="stylesheet" href="../styles/variables.css">
     <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/mammels.css">
     <script src="../scripts/mammals.js" defer></script>
-    
+    <script src="../scripts/menu.js" defer></script>
 </head>
 
 <body>
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="birds.html">BIRDS</a></li>
+            <li><a href="reptiles.html">REPTILES</a></li>
+            <li><a href="mammals.html">MAMMALS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </div>
+
+    <a href="../index.html">
+        <header>
+            <div class="imgWrapper">
+                <img src="../images/icons/009-chameleon.png" alt="chameleon logo" height="100%" width="100%">
+            </div>
+            <div class="titleWrapper">
+                <h1>THE ZOO</h1>
+                <h2>KEEPERS</h2>
+            </div>
+        </header>
+    </a>
+    
+    <section class="header__picture"></section>
+
     <div class="container__section-1">
         <section class="section-1">
             <div class="section-1__title">
@@ -50,6 +83,36 @@
             </div>
         </section>
     </div>
-    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section socialmedia">
+                <div class="social-icons">
+                    <a href="https://github.com/jasminedns/australia-zoo" target="_blank"><img
+                            src="../images/icons/github.png" alt="github-icon"></a>
+                    <a href="https://www.instagram.com/animalsaustralia/" target="_blank"><img
+                            src="../images/icons/instagram.png" alt="instagram-icon"></a>
+                    <a href="https://www.nationalgeographic.com/" target="_blank"><img
+                            src="../images/icons/national-georaphic.png" alt="national-georaphic-icon"></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright 2024 - The Zookeepers</p>
+                </div>
+            </div>
+            <div class="footer-section subscribe">
+                <form class="newsletter">
+                    <label for="email">Subscribe to our newsletter!</label>
+                    <input class="email-input" type="email" id="email" name="email" placeholder="Email" required>
+                    <button type="submit">Subscribe!</button>
+                </form>
+            </div>
+            <div class="footer-section partners">
+                <a href="https://www.nationalgeographic.com" target="_blank">National Georaphic</a>
+                <a href="https://www.worldanimalprotection.org.au" target="_blank">World Animal Protection</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

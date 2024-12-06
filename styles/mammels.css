@@ -79,3 +79,12 @@
     font-weight: 700;
     text-decoration: underline;
 }
+
+header {
+    position: absolute;
+}
+
+.header__picture {
+    background-image: url(../images/background/mammals-background.jpg);
+}
+

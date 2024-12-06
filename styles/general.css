@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ZillaSlab';
     src: url('Fonts/Zilla_Slab_WOFF/ZillaSlab-Bold.woff') format('woff'),
-         url('Fonts/Zilla_Slab_WOFF/ZillaSlab-Bold.woff2') format('woff2');
+        url('Fonts/Zilla_Slab_WOFF/ZillaSlab-Bold.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'KoHo';
     src: url('Fonts/KoHo_WOFF/KoHo-Bold.woff') format('woff2'),
-         url('Fonts/KoHo_WOFF/KoHo-Bold.woff2') format('woff');
+        url('Fonts/KoHo_WOFF/KoHo-Bold.woff2') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -32,11 +32,6 @@ html {
     height: 100vh;
 }
 
-body {
-    height: 100%;
-    margin: 0;
-}
-
 header {
     display: flex;
 }
@@ -50,14 +45,122 @@ header {
 .titleWrapper h1 {
     font-size: 1.2rem;
     margin: 24px 5px 0 0;
+    text-align: left;
 }
 
 .titleWrapper h2 {
     margin: 0 5px 0 16px;
 }
 
-.titleWrapper h1, .titleWrapper h2 {
+.titleWrapper h1,
+.titleWrapper h2 {
     font-family: 'ZillaSlab';
+    color: #000;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'KoHo';
+    color: var(--textcolor-secondary);
+}
+
+/* Hamburger Menu Icon */
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2000;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+    background-color: var(--title-tertiary);
+}
+
+.hamburger-menu .line {
+    width: 30px;
+    height: 4px;
+    background-color: var(--title-main);
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger-menu:hover .line {
+    background-color: var(--button-main);
+}
+
+/* Side Menu (Full Screen) */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* Full screen width */
+    height: 100%;
+    /* Full screen height */
+    color: var(--textcolor-main);
+    transition: 0.3s ease-in-out;
+    padding-top: 50px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 1500;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Initially hidden */
+    visibility: hidden;
+    /* Hide by default */
+    background-color: var(--title-tertiary);
+}
+
+.side-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.side-menu ul li {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: var(--title-main);
+    font-size: 30px;
+    letter-spacing: 2px;
+    /* Slightly spaced letters */
+    display: block;
+    transition: color 0.3s, letter-spacing 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: var(--button-secondary);
+    letter-spacing: 5px;
+    /* Increase letter-spacing on hover */
+}
+
+/* Menu Open/Close Animations */
+.hamburger-menu.open .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+    /* Hide the middle line */
+}
+
+.hamburger-menu.open .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 footer {
@@ -81,7 +184,7 @@ footer {
     position: relative;
 }
 
-.footer-section a { 
+.footer-section a {
     margin: 0 10px;
     color: var(--textcolor-secondary);
     text-decoration: none;
@@ -122,7 +225,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
 
 .newsletter label {
@@ -139,8 +242,8 @@ footer {
     color: var(--textcolor-secondary);
 
     &:focus {
-     outline: none;
-     outline-style: none;
+        outline: none;
+        outline-style: none;
     }
 }
 
@@ -155,7 +258,7 @@ footer {
     color: var(--button-tertiary);
     font-size: var(--small-font);
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .newsletter button:hover {
@@ -193,6 +296,99 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
+
 .medium-horizontal-padding {
- padding: 0 3rem;
+    padding: 0 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.sidebar {
+    color: var(--textcolor-secondary);
+    padding: var(--base-padding);
+    border-radius: var(--border-radius);
+}
+
+.sidebar-button {
+    background-color: transparent;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--small-padding) var(--base-padding);
+    font-size: var(--base-font);
+    color: var(--textcolor-main);
+    cursor: pointer;
+}
+
+.sidebar-button:hover {
+    background-color: var(--button-main);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-button.active {
+    background-color: var(--button-main);
+}
+
+@media screen and (max-width: 768px) {
+
+.imgWrapper {
+    height: 3rem;
+    width: 3rem;
+}
+
+.titleWrapper h1 {
+    font-size: 1rem;
+}
+
+.titleWrapper h2 {
+    font-size: 1.1rem;
+}
+
+    /* tobias footer */
+
+    .footer-content {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .socialmedia {
+        border: none;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        width: 20rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        align-items: start;
+        padding: 20px 0;
+    }
+
+    .footer-section a {
+        margin: 10px 0;
+        color: var(--textcolor-secondary);
+        text-decoration: none;
+    }
+
+    .subscribe {
+        padding: 2rem 0;
+    }
+
+    .footer-bottom {
+        align-self: center;
+    }
+
+    .social-icons {
+        align-self: center;
+        width: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-section.partners {
+        border: none;
+        border-bottom: 1px solid var(--border-color);
+        width: 20rem;
+    }
 }

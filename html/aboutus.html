@@ -6,55 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
     <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/variables.css">
     <link rel="stylesheet" href="../styles/aboutus.css">
     <link rel="stylesheet" href="../styles/Fonts/KoHo_WOFF/KohoFonts.css">
     <link rel="stylesheet" href="../styles/Fonts/LYLAS_WOFF/LYLASFonts.css">
     <link rel="stylesheet" href="../styles/Fonts/Zilla_Slab_WOFF/ZillaSlabFonts.css">
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/aboutus.js" defer></script>
 </head>
 
 <body>
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="birds.html">BIRDS</a></li>
+            <li><a href="reptiles.html">REPTILES</a></li>
+            <li><a href="mammals.html">MAMMALS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </div>
 
     <div class="aboutus-container">
-        <header class="header__absolute">
-            <div class="imgWrapper">
-                <img src="../images/icons/009-chameleon.png" alt="chameleon logo" height="100%" width="100%">
-            </div>
-            <div class="titleWrapper">
-                <h1>THE ZOO</h1>
-                <h2>KEEPERS</h2>
-            </div>
-        </header>
+        <a href="../index.html">
+            <header class="header__absolute">
+                <div class="imgWrapper">
+                    <img src="../images/icons/009-chameleon.png" alt="chameleon logo" height="100%" width="100%">
+                </div>
+                <div class="titleWrapper">
+                    <h1>THE ZOO</h1>
+                    <h2>KEEPERS</h2>
+                </div>
+            </header>
+        </a>    
 
         <section class="header__picture"></section>
 
         <section class="team-content team-content__background">
             <div class="team-content__header">
                 <div class="team-content__our-team">OUR TEAM</div>
-                <div class="flex-horizontal-center">
-                    <!--Change out all info with code later, also generate elemets-->
-                    <div class="team-content__button"> Member 1 </div>
-                    <div class="team-content__button"> Member 2 </div>
-                    <div class="team-content__button"> Member 3 </div>
-                    <div class="team-content__button"> Member 4 </div>
-                    <div class="team-content__button team-content__button--active"> Member 5 </div>
+                <div class="flex-horizontal-center team-content__button-container">
                 </div>
             </div>
-            <div class="team-content__area team-content__area-background">
-                <!--Change out all info with code later, also generate elemets-->
-                <div class="flex-horizontal-center">
-                    <p class="team-content__member-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Delectus
-                        libero nulla quasi adipisci, eligendi exercitationem quidem, dignissimos inventore amet quod
-                        alias
-                        assumenda, perspiciatis natus facere id qui repellendus dolorum dolores!</p>
 
+            <div class="team-content__area team-content__area-background">
+        
+                <div class="flex-horizontal-center">
+                    <p class="team-content__member-info"></p>
                 </div>
-                <img class="team-content__member-picture" src="../images/team/tobias.jpg  " alt="jasmine" width="100%"
-                    height="australia-zoo">
+                <div class="team-content__picture-area hidden">
+                    <img class="team-content__member-picture" src="" alt="" width="100%" height="auto">
+                </div>
+
                 <div class="flex-vertical-center">
-                    <p class="team-content__member-fname">firstname</p>
-                    <p class="team-content__member-lname">lastname</p>
+                    <p class="team-content__member-fname"></p>
+                    <p class="team-content__member-lname"></p>
                 </div>
 
             </div>
@@ -85,7 +98,7 @@
                 <div class="footer-section partners">
                     <a href="https://www.nationalgeographic.com" target="_blank">National Georaphic</a>
                     <a href="https://www.worldanimalprotection.org.au" target="_blank">World Animal Protection</a>
-                    <a href="html/aboutus.html">About Us</a>
+                    <a href="aboutus.html">About Us</a>
                 </div>
             </div>
         </footer>
