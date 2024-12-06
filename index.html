@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="styles/Fonts/LYLAS_WOFF/LYLASFonts.css">
     <link rel="stylesheet" href="styles/Fonts/Zilla_Slab_WOFF/ZillaSlabFonts.css">
     <script src="./scripts/menu.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+
 </head>
 
 <body>
@@ -44,22 +45,16 @@
     <section class="header__picture"></section>
 
     <div class="main">
-        <div class="sidebar">
-            <ul>
-                <li class="sidebar-button">ANIMAL 1</li>
-                <li class="sidebar-button">ANIMAL 2</li>
-                <li class="sidebar-button">ANIMAL 3</li>
-                <li class="sidebar-button">ANIMAL 4</li>
-                <li class="sidebar-button">ANIMAL 5</li>
-                <li class="sidebar-button">ANIMAL 6</li>
-                <li class="sidebar-button">ANIMAL 7</li>
-                <li class="sidebar-button">ANIMAL 8</li>
-                <li class="sidebar-button">ANIMAL 9</li>
-            </ul>
+
+        <div class="sidebar" id="sidebar">  
+            <ul class="animal-list" id="animal-list">
+               
+            </ul>          
         </div>
-        <div class="welcome-message">
-            <h1>WELCOME TO THE "ZOO KEEPERS" OFFICIAL PAGE!</h1>
-            <P>We are thrilled to have you here. Explore and enjoy your time on our platform!</P>
+        <div class="welcome-message" id="main-content">
+            <h3 id="welcome-message"></h3>
+            <img class="animal-image" id="animal-image" alt="" width="100%" height="auto">
+            <p id="animal-summary"></p>
         </div>
     </div>
 
