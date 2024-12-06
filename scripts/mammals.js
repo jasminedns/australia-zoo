@@ -80,12 +80,12 @@ const buttonsAndEvents = () => {
 
                 if (mammalButton === 1) {
                     let splitName = mammals[mammalButton].name.split(" ");
-                    mammalFirstNameEl.textContent = splitName[0];
+                    mammalFirstNameEl.textContent = splitName[0].toUpperCase();
                     mammalLastNameEl.textContent = splitName[1] || '';
                     mammalLastNameEl.classList.remove("hidden");
                     mammalFirstNameEl.classList.add("section-2__title--active");
                 } else {
-                    mammalFirstNameEl.textContent = mammals[mammalButton].name;
+                    mammalFirstNameEl.textContent = mammals[mammalButton].name.toUpperCase();
                     mammalLastNameEl.textContent = ``;
                     mammalLastNameEl.classList.add("hidden");
                 }
