@@ -1,61 +1,9 @@
-@font-face {
-    font-family: 'ZillaSlab';
-    src: url('Fonts/Zilla_Slab_WOFF/ZillaSlab-Bold.woff') format('woff'),
-        url('Fonts/Zilla_Slab_WOFF/ZillaSlab-Bold.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'KoHo';
-    src: url('Fonts/KoHo_WOFF/KoHo-Bold.woff') format('woff2'),
-        url('Fonts/KoHo_WOFF/KoHo-Bold.woff2') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'KoHoregular';
-    src: url('Fonts/KoHo_WOFF/KoHo-Regular.woff') format('woff2'),
-        url('Fonts/KoHo_WOFF/KoHo-Regular.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 * {
     box-sizing: border-box;
 }
 
 html {
     height: 100vh;
-}
-
-header {
-    display: flex;
-}
-
-.imgWrapper {
-    margin: 24px 0 24px 24px;
-    height: 70px;
-    width: 70px;
-}
-
-.titleWrapper h1 {
-    font-size: 1.2rem;
-    margin: 24px 5px 0 0;
-    text-align: left;
-}
-
-.titleWrapper h2 {
-    margin: 0 5px 0 16px;
-}
-
-.titleWrapper h1,
-.titleWrapper h2 {
-    font-family: 'ZillaSlab';
-    color: #000;
 }
 
 body {
@@ -65,7 +13,6 @@ body {
     color: var(--textcolor-secondary);
 }
 
-/* Hamburger Menu Icon */
 .hamburger-menu {
     position: fixed;
     top: 20px;
@@ -75,7 +22,6 @@ body {
     padding: 10px;
     border-radius: var(--border-radius);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    /* Shadow effect */
     background-color: var(--title-tertiary);
 }
 
@@ -91,15 +37,12 @@ body {
     background-color: var(--button-main);
 }
 
-/* Side Menu (Full Screen) */
 .side-menu {
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
-    /* Full screen width */
     height: 100%;
-    /* Full screen height */
     color: var(--textcolor-main);
     transition: 0.3s ease-in-out;
     padding-top: 50px;
@@ -109,9 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    /* Initially hidden */
     visibility: hidden;
-    /* Hide by default */
     background-color: var(--title-tertiary);
 }
 
@@ -138,7 +79,6 @@ body {
     color: var(--title-main);
     font-size: 30px;
     letter-spacing: 2px;
-    /* Slightly spaced letters */
     display: block;
     transition: color 0.3s, letter-spacing 0.3s;
 }
@@ -146,26 +86,55 @@ body {
 .side-menu ul li a:hover {
     color: var(--button-secondary);
     letter-spacing: 5px;
-    /* Increase letter-spacing on hover */
 }
 
-/* Menu Open/Close Animations */
 .hamburger-menu.open .line:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .hamburger-menu.open .line:nth-child(2) {
     opacity: 0;
-    /* Hide the middle line */
 }
 
 .hamburger-menu.open .line:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+header {
+    display: flex;
+}
+
+.imgWrapper {
+    margin: 24px 0 24px 24px;
+    height: 70px;
+    width: 70px;
+}
+
+.titleWrapper h1 {
+    font-size: 1.2rem;
+    margin: 24px 5px 0 0;
+    text-align: left;
+}
+
+.titleWrapper h2 {
+    margin: 0 5px 0 16px;
+}
+
+.titleWrapper h1,
+.titleWrapper h2 {
+    font-family: 'Zilla Slab';
+    font-weight: 900;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
 footer {
     background-image: url("../images/textures/texture2-backgorund.jpg");
     color: var(--textcolor-secondary);
+    font-family: 'KoHo';
     padding: 20px 0;
     text-align: center;
 }
@@ -193,7 +162,6 @@ footer {
 .footer-section.partners {
     display: flex;
     flex-direction: column;
-    font-family: 'KoHoregular';
     font-size: var(--small-font);
     justify-content: space-between;
     text-align: center;
@@ -216,7 +184,6 @@ footer {
 }
 
 .footer-bottom p {
-    font-family: 'KoHoregular';
     font-size: var(--small-font);
     margin: 0;
 }
@@ -251,7 +218,6 @@ footer {
     padding: 10px 10px;
     background-color: var(--title-secondary);
     width: 160px;
-    font-family: 'KoHoregular';
     border: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -264,7 +230,6 @@ footer {
 .newsletter button:hover {
     background-color: var(--button-secondary-hover);
     color: var(--button-tertiary-hover);
-    font-family: 'KoHo';
 }
 
 .socialmedia {
@@ -282,7 +247,6 @@ footer {
 
 .subscribe {
     height: 160px;
-    font-family: 'KoHoregular';
     font-size: var(--small-font);
 }
 
@@ -299,35 +263,6 @@ footer {
 
 .medium-horizontal-padding {
     padding: 0 3rem;
-}
-
-.hidden {
-    display: none;
-}
-
-.sidebar {
-    color: var(--textcolor-secondary);
-    padding: var(--base-padding);
-    border-radius: var(--border-radius);
-}
-
-.sidebar-button {
-    background-color: transparent;
-    border: none;
-    border-radius: var(--border-radius);
-    padding: var(--small-padding) var(--base-padding);
-    font-size: var(--base-font);
-    color: var(--textcolor-main);
-    cursor: pointer;
-}
-
-.sidebar-button:hover {
-    background-color: var(--button-main);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.sidebar-button.active {
-    background-color: var(--button-main);
 }
 
 @media screen and (max-width: 768px) {
