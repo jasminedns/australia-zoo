@@ -143,13 +143,21 @@ const buttonsAndEvents = () => {
             })
 
             readMoreEl.addEventListener("click", () => {
-                birdDescEl.textContent = birds[birdButton].fulldescription
+                
+                birdDescEl.innerHTML = 
+                    'Lifespan: ' + birds[birdButton].lifespan + '<br>' 
+                    + 'Group: ' + birds[birdButton].group + '<br>'
+                    + 'Food: ' + birds[birdButton].food + '<br>'
+                    + 'Lenght: ' + birds[birdButton].lenght + '<br>'
+                    + 'Weight: ' + birds[birdButton].weight + '<br>'
+                    + 'Found: ' + birds[birdButton].found + '<br>'
+                    + birds[birdButton].fulldescription
+
                 readMoreEl.textContent = ``;
             })
         })
     }        
 }
-
 
 const launch = () => {
     addBirds();
