@@ -5,10 +5,6 @@ header {
 .header__picture {
     background-image: url(../images/background/reptile_2-background.jpg);
 }
-.reptiles-background {
-    background-image: url(../images/background/reptiles-background.jpg);
-    
-}
 
 .container__section-1,
 .container__section-2 {
