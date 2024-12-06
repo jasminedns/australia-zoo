@@ -1,7 +1,7 @@
 let mammals = [];
 let mammalMenuEl = document.querySelector(".animalmenu__container");
-let mammalFirstNameEl = document.querySelector(".section-2__title--changeContent-1");
-let mammalLastNameEl = document.querySelector(".section-2__title--changeContent-2");
+let mammalFirstPartNameEl = document.querySelector(".section-2__title--changeContent-1");
+let mammalSecondPartNameEl = document.querySelector(".section-2__title--changeContent-2");
 let mammalImgEl = document.querySelector(".section-2__img--changeContent");
 let mammalDescEl = document.querySelector(".section-2__text--changeContent");
 let readMoreEl = document.querySelector(".section-2__text--readmore");
@@ -54,8 +54,8 @@ const ourMammals = () => {
 }
 
 const mammalSection2Content = () => {
-    mammalFirstNameEl.textContent = `Furry`;
-    mammalLastNameEl.textContent = `Friends`;
+    mammalFirstPartNameEl.textContent = `Furry`;
+    mammalSecondPartNameEl.textContent = `Friends`;
     mammalImgEl.classList.add("hidden");
     mammalDescEl.textContent = `Our mammals are treated with the utmost care and respect. From large enclosures with natural habitats to specialized diets and enrichment activities, we make sure our mammals lead a healthy and happy life. Our zoo is dedicated to preserving these wonderful creatures and educating the public about them.`;
     readMoreEl.classList.add("hidden");
@@ -78,16 +78,16 @@ const buttonsAndEvents = () => {
                 // Set Mammal Details
                 let splitName = mammals[mammalButton].name.split(" ");
 
-                if (mammalButton === 1) {
+                if (mammalButton === 0) {
                     let splitName = mammals[mammalButton].name.split(" ");
-                    mammalFirstNameEl.textContent = splitName[0].toUpperCase();
-                    mammalLastNameEl.textContent = splitName[1] || '';
-                    mammalLastNameEl.classList.remove("hidden");
-                    mammalFirstNameEl.classList.add("section-2__title--active");
+                    mammalFirstPartNameEl.textContent = splitName[0].toUpperCase();
+                    mammalSecondPartNameEl.textContent = splitName[1].toUpperCase() || '';
+                    mammalSecondPartNameEl.classList.remove("hidden");
+                    mammalFirstPartNameEl.classList.add("section-2__title--active");
                 } else {
-                    mammalFirstNameEl.textContent = mammals[mammalButton].name.toUpperCase();
-                    mammalLastNameEl.textContent = ``;
-                    mammalLastNameEl.classList.add("hidden");
+                    mammalFirstPartNameEl.textContent = mammals[mammalButton].name.toUpperCase();
+                    mammalSecondPartNameEl.textContent = ``;
+                    mammalSecondPartNameEl.classList.add("hidden");
                 }
                 mammalImgEl.classList.remove("hidden");
                 mammalImgEl.src = `../images/transparent-img/${mammals[mammalButton].image}`
