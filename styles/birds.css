@@ -21,6 +21,7 @@ header {
 }
 
 .animalMenu__element:hover {
+    background-color: var(--button-main);
     font-weight: 700;
 }
 
