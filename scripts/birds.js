@@ -145,12 +145,12 @@ const buttonsAndEvents = () => {
             readMoreEl.addEventListener("click", () => {
                 
                 birdDescEl.innerHTML = 
-                    'Lifespan: ' + birds[birdButton].lifespan + '<br>' 
-                    + 'Group: ' + birds[birdButton].group + '<br>'
-                    + 'Food: ' + birds[birdButton].food + '<br>'
-                    + 'Lenght: ' + birds[birdButton].lenght + '<br>'
-                    + 'Weight: ' + birds[birdButton].weight + '<br>'
-                    + 'Found: ' + birds[birdButton].found + '<br>'
+                    'Its lifespan can reach ' + birds[birdButton].lifespan + ' which is quite impressive since it belongs to the ' 
+                    + birds[birdButton].group + ' group. It likes to eat '
+                    + birds[birdButton].food + ' and on average it is '
+                    + birds[birdButton].lenght + ' long and weights '
+                    + birds[birdButton].weight + '. You can mainly find it around '
+                    + birds[birdButton].found + '!<br>'
                     + birds[birdButton].fulldescription
 
                 readMoreEl.textContent = ``;
