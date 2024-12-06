@@ -108,13 +108,25 @@ const buttonsAndEvents = () => {
                 readMoreEl.textContent = `Read more...`;
             });
 
-            readMoreEl.addEventListener("click", () => {
-                reptileDescEl.textContent = reptiles[reptileButton].fulldescription;
-                readMoreEl.textContent = ``;
-            });
+            readMoreEl.onclick = () => {
+                const { lifespan, group, food, length, weight, found, fulldescription } = reptiles[reptileButton];
+
+                reptileDescEl.innerHTML = `
+                    Lifespan: ${lifespan}<br>
+                    Group: ${group}<br>
+                    Food: ${food}<br>
+                    Length: ${length}<br>
+                    Weight: ${weight}<br>
+                    Found: ${found}<br>
+                    ${fulldescription}
+                `;
+
+                readMoreEl.textContent = '';
+            };
         });
-    }
-};
+    };
+};    
+            
 
 // Launch function to initialize everything
 const launch = () => {
