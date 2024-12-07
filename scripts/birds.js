@@ -73,7 +73,7 @@ const addBirds = () => {
     birds.push(bird3);
 }
 
-let animalMenuEl = document.querySelector(".animalmenu__cointainer");
+let animalMenuEl = document.querySelector(".animalmenu__container");
 let birdFirstNameEl = document.querySelector(".section-2__title--changeContent-1");
 let birdLastNameEl = document.querySelector(".section-2__title--changeContent-2");
 let birdImgEl = document.querySelector(".section-2__img--changeContent");
@@ -143,13 +143,21 @@ const buttonsAndEvents = () => {
             })
 
             readMoreEl.addEventListener("click", () => {
-                birdDescEl.textContent = birds[birdButton].fulldescription
+                
+                birdDescEl.innerHTML = 
+                    'Its lifespan can reach ' + birds[birdButton].lifespan + ' which is quite impressive since it belongs to the ' 
+                    + birds[birdButton].group + ' group. It likes to eat '
+                    + birds[birdButton].food + ' and on average it is '
+                    + birds[birdButton].lenght + ' long and weights '
+                    + birds[birdButton].weight + '. You can mainly find it around '
+                    + birds[birdButton].found + '!<br>'
+                    + birds[birdButton].fulldescription
+
                 readMoreEl.textContent = ``;
             })
         })
     }        
 }
-
 
 const launch = () => {
     addBirds();

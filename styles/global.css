@@ -26,7 +26,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 50%;
+    user-select: none;
 }
 
 .container__section-1 {
@@ -46,19 +46,17 @@ body {
     width: 85%;
 }
 
-.section-1 {
-    height: 80%;
-}
-
-.section-2 {
-    height: 100%;
-}
-
 .section-1__text,
 .section-2__text {
     font-weight: 600;
     margin: var(--large-margin) 0;
     padding: var(--large-padding);
+}
+
+.section-2__text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .section-1__text--changeContent,
@@ -74,12 +72,13 @@ body {
 
 .section-2__text--changeContent {
     color: var(--textcolor-main);
+    margin: var(--base-margin);
     text-align: right;
 }
 
 .section-1__title,
 .section-2__title {
-    margin: var(--large-margin) var(--large-margin) var(--large-margin) 0;
+    margin: var(--large-margin) 0;
     padding: var(--large-padding);
 }
 
@@ -92,6 +91,7 @@ body {
 .section-2__title--changeContent-1,
 .section-2__title--changeContent-2 {
     margin: 0 var(--base-margin) var(--base-margin) var(--base-margin);
+    text-transform: uppercase;
 }
 
 .section-1__title--changeContent-1 {
@@ -111,7 +111,12 @@ body {
 }
 
 .section-2__img--changeContent {
-    width: 250px;
+    width: 300px;
+}
+
+.section-2__img {
+    margin-bottom: var(--base-margin);
+    margin-left: -32px;
 }
 
 .animalmenu {
@@ -128,15 +133,64 @@ body {
         color: var(--textcolor-secondary);
         display: inline-block;
         font-weight: 600;
-        margin: var(--small-margin) var(--base-margin);
+        margin: var(--base-margin) var(--base-margin);
         padding: var(--small-padding);
     }
 }
 
-.section-1__empty {
-    width: 40%;
+.section-2__text--readmore {
+    color: black;
+    display: inline-block;
+    margin: var(--base-margin);
+    text-align: right;
 }
 
-.section-2__empty {
-    width: 60%;
+.section-2__text--readmore:hover {
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: underline;
 }
+
+@media screen and (max-width: 1350px) {
+    .section-1, .section-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-1__title, .section-2__title {
+        text-align: center;
+        order: 0;
+        margin-bottom: 0;
+    }
+
+    .section-1__title--changeContent-1, 
+    .section-1__title--changeContent-2,
+    .section-2__title--changeContent-1,
+    .section-2__title--changeContent-2 {
+        font-size: 2.5rem;
+    }
+
+    .section-1__text, 
+    .section-2__text {
+        text-align: center;
+        margin-top: 0;
+        padding: 8px 8px;
+        order: 1;
+    }
+
+    .section-1__text--changeContent, 
+    .section-2__text--changeContent {
+        font-size: 0.9rem;
+    }
+
+    .section-2__text--changeContent {
+        text-align: center;
+    }
+
+    .animalmenu__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} 

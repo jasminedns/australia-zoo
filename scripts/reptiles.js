@@ -50,7 +50,7 @@ const addReptiles = () => {
 };
 
 // Selecting DOM elements for reptiles section
-let animalMenuEl = document.querySelector(".animalmenu__cointainer");
+let animalMenuEl = document.querySelector(".animalmenu__container");
 let reptileFirstNameEl = document.querySelector(".section-2__title--changeContent-1");
 let reptileLastNameEl = document.querySelector(".section-2__title--changeContent-2");
 let reptileImgEl = document.querySelector(".section-2__img--changeContent");
